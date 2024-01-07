@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ciutadella Rugby Club Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="Menu Superior" class="navbar">
+        <div id="Logo" class="logo">
+            <a href="/src/index.html">
+                <img src="/images/logo.svg" alt="Logo" width="80rem">
+            </a>
+        </div>
+        <div id="Icons" class="icons_menu">
+            <div class="search-icon" id="search-icon">
+                <img src="/images/icons/search.svg" alt="Buscar" width="5rem">
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#98082c;">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">Brand</a>
+
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+
+      </ul>
+
+      <ul class="navbar-nav d-flex flex-row me-1">
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+        <li class="nav-item me-3 me-lg-0">
+          <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav> -->
+    <div class="search-bar" id="search-bar">
+        <div class="menu">
+            <a href="/src/index.html">Inicio</a>
+            <a href="/src/sobrenosaltres.html">Sobre Nosaltres</a>
+            <a href="/src/contacte.html">Contacte</a>
+            <a href="/src/cataleg.html">Cataleg de productes</a>
+        </div>
+        <input type="text" placeholder="Buscar...">
+        <button id="close-search">&#10006;</button>
+    </div>
+
+    <div id="ContenidorPrincipal" class="main_content">
+        <div id="MenorcaSiuleta" class="">
+            <img src="/images/menorca_lletres.svg" alt="Menorca Siuleta" width="500rem">
+        </div>
+        <div class="module grid grid-cols-2 grid-rows-3 gap-4">
+            <div class="row-span-3 ">
+                <img src="/images/pexels-w-rugby-5823574.jpg" alt="Pilota tombada a la gespa" width="80rem"
+                    class="rounded-image">
+            </div>
+            <div class="">
+                <h1>Descobreix el món del rugby amb nosaltres</h1>
+            </div>
+            <div class="col-start-2 row-start-2">
+                <p>Benvinguts a la casa del rugby a Ciutadella de Menorca. Ja siguis un apassionat jugador, un fervent
+                    seguidor o simplement algú que vol explorar el món emocionant del rugby, estàs al lloc correcte.
+                    Descobreix el nostre club, les seves històries i la seva passió pel joc.</p>
+            </div>
+            <div id="DivBoto" class="col-start-2 row-start-3">
+                <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
+                    Veure més!
+                </button>
+            </div>
+        </div>
+
+
+        <div class="module grid grid-cols-1 grid-rows-3 gap-0">
+            <div class="">
+                <h1>Uniu-vos a nosaltres i experimenteu el rugby com mai abans.
+                </h1>
+            </div>
+            <div>
+                <p>Amb unes instal·lacions excepcionals a Menorca, el Ciutadella Rugby Club ofereix un entorn únic per a
+                    l'entrenament i la pràctica del rugby. Descobreix les comoditats que fan que la nostra seu sigui un
+                    lloc especial per als amants d'aquest esport.</p>
+            </div>
+            <div id="DivBoto" class="">
+                <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
+                    Endevant!
+                </button>
+            </div>
+        </div>
+
+        <div class="module grid grid-cols-1 grid-rows-4 gap-0">
+            <div>
+                <h1>La missió del club</h1>
+            </div>
+            <div>
+                <p>Estem dedicats a fomentar la passió pel rugby i construir una comunitat unida. Amb un enfocament en
+                    l'esport, la camaraderia i els valors, aspirem a créixer junts com a equip i superar els reptes amb
+                    determinació.
+                </p>
+            </div>
+            <div id="DivBoto" class="col-start-2 row-start-3">
+                <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
+                    Veure més!
+                </button>
+            </div>
+            <div>
+                <img src="/images/pexels-beto-valderrama-16566938.jpg" alt="" width="" class="rounded-image">
+            </div>
+        </div>
+
+        <div class="divisor" />
+        <div className="grid grid-cols-1 grid-rows-6 gap-0">
+            <h1 class="title">Calendari</h1>
+            <div class="ElementCalendari grid grid-cols-7 grid-rows-1 gap-1">
+                <div class="divdia">15</div>
+                <div class="col-span-4">15/12/2023 20:00 - VS Shamrock R.C</div>
+                <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
+                    Compra entrades
+                </button>
+            </div>
+            <div class="ElementCalendari grid grid-cols-7 grid-rows-1 gap-1">
+                <div class="divdia">20</div>
+                <div class="col-span-4">15/12/2023 20:00 - VS Shamrock R.C</div>
+                <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
+                    Compra entrades
+                </button>
+            </div>
+            <div class="ElementCalendari grid grid-cols-7 grid-rows-1 gap-1">
+                <div class="divdia">7</div>
+                <div class="col-span-4">15/12/2023 20:00 - VS Shamrock R.C</div>
+                <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
+                    Compra entrades
+                </button>
+            </div>
+            <div class="ElementCalendari grid grid-cols-7 grid-rows-1 gap-1">
+                <div class="divdia">14</div>
+                <div class="col-span-4">15/12/2023 20:00 - VS Shamrock R.C</div>
+                <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
+                    Compra entrades
+                </button>
+            </div>
+            <h2 class="title">Mes dates per anunciar</h2>
+            <div class="divisor" />
+
+
+        </div>
+        <div class="module grid grid-cols-1 grid-rows-3 gap-0">
+            <div class="">
+                <h1>Uniu-vos a nosaltres i experimenteu el rugby com mai abans.
+                </h1>
+            </div>
+            <div>
+                <p>Amb unes instal·lacions excepcionals a Menorca, el Ciutadella Rugby Club ofereix un entorn únic per a
+                    l'entrenament i la pràctica del rugby. Descobreix les comoditats que fan que la nostra seu sigui un
+                    lloc especial per als amants d'aquest esport.</p>
+            </div>
+            <div id="DivBoto" class="">
+                <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
+                    Endevant!
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="row gx-1">
+            <div class="col-12">
+                <img src="../images/menorca_white.svg" alt="Menorca Siuleta">
+            </div>
+        </div>
+        <div class="row gx-1">
+            <div class="col-12">
+                <ul class="">
+                    <li class="list-group-item">Sobre nosaltres</li>
+                    <li class="list-group-item">Serveis</li>
+                    <li class="list-group-item">Marca</li>
+                    <li class="list-group-item">Sostenibilitat</li>
+                    <li class="list-group-item">Espai soci</li>
+                    <a href="/src/sobrenosaltres.html">
+                        <li class="list-group-item">Contacte</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="row gx-1">
+            <div class="col-12 icon-footer">
+                <img class="icon" src="/images/icons/facebook.svg" alt="Facebook">
+                <img class="icon" src="/images/icons/twitter.svg" alt="Twitter">
+                <img class="icon" src="/images/icons/instagram.svg" alt="Instagram">
+                <img class="icon" src="/images/icons/linkedin.svg" alt="LinkedIn">
+                <img class="icon" src="/images/icons/youtube.svg" alt="LinkedIn">
+            </div>
+        </div>
+        <div class="row gx-1">
+            <div class="col-12">
+                <p>UOC 2023 - by Daniel Larrosa Mujico</p>
+            </div>
+        </div>
+        <!-- Aquí puedes incluir el pie de página con información adicional o enlaces -->
+    </footer>
+
+    <!-- Agrega enlaces a tus archivos de scripts JavaScript aquí si es necesario -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
