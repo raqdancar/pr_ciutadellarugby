@@ -5,21 +5,71 @@ body {
 
 .navbar {
   background-color: #98082C;
-  padding: 15px;
+  padding: 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .main_content{
   background-color: #F2F0E9;
-  padding-top: 1rem;
 }
 
-.module{
+.modul{
   background-color: #B7536C;
   border-radius: 19px;
-  margin: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center; /* Alinea verticalmente al centro */
+}
+
+.contingut_m1, .contingut_m2{
+  color:white;
+  text-align: center; /* Alinea el texto al centro */
+  flex: 1; /* Distribuye el espacio igualmente entre ambas columnas */
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+}
+.contingut_m1{
+  margin: 1rem;
+}
+.contingut_m2{
+  margin: 3rem;
+}
+.imatge-esquerra{
+  flex: 0.8;
+  margin: 1rem;
+}
+.imatge-esquerra img {
+  width: auto;
+  height: 429px;
+  flex-shrink: 0; /* Evita que la imagen se contraiga en caso de poco espacio */
+}
+.contingut_m1 h1{
+  font-size: 24px;
+  word-spacing: 10px; /* Ajusta el valor según tus necesidades */
+}
+.contingut_m1 p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size:15px;
+}
+
+.contingut_m1 button{
+  background-color:#98082C;
+  border-radius: 10px;
+  border: 0px;
+  height: 3rem;
+  width: 8rem;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 3rem; /* Igual a la altura del botón para centrar verticalmente */
+  text-align: center; /* Centra el texto horizontalmente */
 }
 
 .ElementCalendari{
@@ -28,9 +78,7 @@ body {
 }
 
 .rounded-image{
-  border-radius: 25px;
-  width: auto;
-  margin: 1rem;
+  border-radius: 25px;  
 }
 
 .footer{
@@ -63,12 +111,7 @@ body {
   padding: 15px;
 }
 
-.module button{
-  background-color:#98082C;
-  border-radius: 10px;
-  color: #fff;
-  text-align: center;
-}
+
 
 .module #DivBoto{
   display: flex;
@@ -189,14 +232,6 @@ body {
   margin-right: 10px; /* Espacio entre los iconos */
 }
 
-.navbar {
-  background-color: #98082C;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .siluetafooter{
   fill: #F2F0E9;
 }
@@ -222,11 +257,7 @@ body {
   background-color: #B7536C;
   border-radius: 19px;
 }
-.rounded-image{
-  border-radius: 25px;
-  width: auto;
-  margin: 1rem;
-}
+
 .footer{
   background-color: #98082C;
   padding: 15px;
@@ -351,9 +382,19 @@ body {
   font-size: 24px; /* Tamaño del texto */
 }
 
+
+
 img{
   max-width: 100%;
   height: auto;
+}
+
+#MenorcaSiuleta{
+
+}
+
+.svg_menorca{
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
