@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.getElementById('menu-icon');
-    const searchBar = document.getElementById('search-bar');
+    const searchBar = document.getElementById('menu-movil');
     const searchIcon = document.getElementById('search-icon');
     const closeSearch = document.getElementById('close-search');
   

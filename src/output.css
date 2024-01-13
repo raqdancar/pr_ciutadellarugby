@@ -1,3 +1,5 @@
+/* CLASES UNIVERSALS PER QUALSEVOL DISPOSITIU (ESCRITORI, TABLET I MÒBIL) */
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -209,40 +211,7 @@ body {
   margin: 5px 0;
 }
 
-.search-bar {
-  display: none;
-  background-color: #98082c;
-  padding: 15px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-  border-top: #b7536c 5px solid;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
 
-.search-bar input {
-  font-family: "Lato", sans-serif;
-  padding: 10px;
-  border: none;
-  border-radius: 15px;
-  margin-right: 10px;
-  margin-top: 15px;
-  background-color: #e8eef2;
-  color: #98082c;
-  font-weight: bold;
-}
-
-.search-bar button {
-  background-color: #98082c;
-  color: #333;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
 .divdia {
   background-color: #e8eef2;
@@ -408,18 +377,9 @@ body {
   color: #fff;
 }
 
-.search-bar {
-  display: none;
-  padding: 15px;
-  position: fixed;
-  top: 7rem;
-  left: 0;
-  width: 100%;
-  background-color: #98082c;
-  box-sizing: border-box;
-}
 
-.search-bar input {
+
+.menu-movil input {
   width: 80%;
   padding: 10px;
   border: none;
@@ -427,7 +387,7 @@ body {
   margin-right: 10px;
 }
 
-.search-bar button {
+.menu-movil button {
   background-color: #98082c;
   color: #333;
   border: none;
@@ -826,8 +786,51 @@ section #oferta #divisor {
 .footer ul a:hover {
   color: black;
 }
+.icon-footer p {
+  font-family: "Josefin Sans", sans-serif;
+}
 /* CLASES PER VISTA VERSIÓ MOVIL: */
 @media only screen and (max-width: 768px) {
+
+  /* ------------------- Menu Superior */
+  .menu-movil {
+    display: none;
+    background-color: #98082c;
+    padding: 15px;
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: #b7536c 5px solid;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  
+  .menu-movil input {
+    font-family: "Lato", sans-serif;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-top: 15px;
+    background-color: #e8eef2;
+    color: #98082c;
+    font-weight: bold;
+  }
+  
+  .menu-movil button {
+    background-color: #98082c;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /* ------------------- */
+
+
+
   /* ------------------- Footer */
   .footer {
     background-color: #98082c;
@@ -845,7 +848,7 @@ section #oferta #divisor {
     font-style: italic;
   }
 
-  .footer p {
+  .icon-footer p {
     font-family: "Josefin Sans", sans-serif;
   }
 
