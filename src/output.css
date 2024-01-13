@@ -10,6 +10,9 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .menu_superior label {
@@ -23,12 +26,13 @@ body {
   display: flex;
   flex-direction: column;
   color: #f2f0e9;
-  text-decoration: none;
   font-family: "Lato", sans-serif;
   font-style: oblique;
   font-weight: bold;
 }
-
+.items-menu a {
+  text-decoration: none;
+}
 .items-menu a:visited {
   color: #e8eef2;
 }
@@ -70,7 +74,7 @@ body {
   margin: 3rem;
 }
 
-.contingut_m2 button{
+.contingut_m2 button {
   margin-bottom: 1rem;
 }
 
@@ -126,7 +130,7 @@ body {
 }
 
 .ElementCalendari button {
-  font-size: 18px;
+  font-size: 17px;
   background-color: #98082c;
   border-radius: 10px;
   border: 0px;
@@ -215,6 +219,8 @@ body {
   width: 100%;
   box-sizing: border-box;
   border-top: #b7536c 5px solid;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .search-bar input {
@@ -256,7 +262,7 @@ body {
   border-radius: 25px;
   width: 100%;
   height: 100%;
-  font-size: 25px;
+  font-size: 14px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -280,8 +286,6 @@ body {
   font-weight: 400;
   font-size: 28px;
 }
-
-
 
 .imageText {
   background-image: url("../images/pexels-juliana-chyzhova-2648989.jpg");
@@ -309,7 +313,7 @@ body {
   justify-content: space-between;
 }
 
-#Icons.icons_menu>div {
+#Icons.icons_menu > div {
   margin-right: 10px;
   /* Ajusta el margen según sea necesario para separar los iconos */
 }
@@ -332,16 +336,6 @@ body {
   margin: 2rem;
 }
 
-.footer {
-  background-color: #98082c;
-  padding: 15px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 .icon {
   width: 24px;
   /* Ancho de cada icono */
@@ -349,29 +343,6 @@ body {
   /* Altura de cada icono */
   margin-right: 10px;
   /* Espacio entre los iconos */
-}
-
-.footer ul {
-  list-style: none;
-  padding: 0;
-  font-family: "Josefin Sans", sans-serif;
-  font-style: italic;
-}
-
-.footer p {
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.footer img {
-  fill: #e8eef2;
-  width: 10rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.icon-footer {
-  display: flex;
-  justify-content: space-between;
 }
 
 .module div {
@@ -507,7 +478,8 @@ img {
   height: auto;
 }
 
-#MenorcaSiuleta {}
+#MenorcaSiuleta {
+}
 
 .svg_menorca {
   width: 100%;
@@ -538,13 +510,13 @@ img {
   display: none;
 }
 
-#PoliticaPrivacitat input[type="checkbox"]+label {
+#PoliticaPrivacitat input[type="checkbox"] + label {
   position: relative;
   padding-left: 35px;
   cursor: pointer;
 }
 
-#PoliticaPrivacitat input[type="checkbox"]+label:before {
+#PoliticaPrivacitat input[type="checkbox"] + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -555,7 +527,7 @@ img {
   border-radius: 5px;
 }
 
-#PoliticaPrivacitat input[type="checkbox"]:checked+label:before {
+#PoliticaPrivacitat input[type="checkbox"]:checked + label:before {
   background-color: #98082c;
 }
 
@@ -707,8 +679,8 @@ img {
 }
 
 /* Crea un nuevo radio button */
-#si+label:before,
-#no+label:before {
+#si + label:before,
+#no + label:before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -725,8 +697,8 @@ img {
 }
 
 /* Muestra un indicador cuando el radio button está seleccionado */
-#si:checked+label:before,
-#no:checked+label:before {
+#si:checked + label:before,
+#no:checked + label:before {
   background-color: black;
   /* Ajusta el color del indicador aquí */
 }
@@ -836,9 +808,93 @@ section #oferta #divisor {
 .menu-icon {
   display: block;
 }
-
+.footer ul {
+  list-style: none;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: left;
+}
+.footer ul a {
+  text-decoration: none;
+  color: #e8eef2;
+}
+.footer ul a:visited {
+  color: #e8eef2;
+}
+.footer ul a:hover {
+  color: black;
+}
+/* CLASES PER VISTA VERSIÓ MOVIL: */
 @media only screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
+  /* ------------------- Footer */
+  .footer {
+    background-color: #98082c;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: italic;
+  }
+
+  .footer p {
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .icon-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon-footer a {
+    display: inline-block;
+  }
+  .icon-footer div{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    
+  }
+  .footer #imgfooterescriptori {
+    display: none;
+  }
+  .footer img {
+    fill: #e8eef2;
+    width: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  /* ------------------- */
+}
+
+/* CLASES PER VISTA VERSIÓ ESCRIPTORI: */
+@media only screen and (min-width: 769px) {
+  .footer {
+    background-color: #98082c;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .footer #imgfootermovil {
+    display: none;
+  }
+  .footer #imgfooterescriptori {
+    fill: #e8eef2;
+    width: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
 }
