@@ -779,14 +779,26 @@ section #oferta #divisor {
 #menu-escriptori a{
   text-decoration: none;
 }
+#submenu-escriptori{
+    background-color: #98082c;
+    padding: 15px;
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    border-top: #f2f0e9 5px solid;
+    
+}
+
 /* CLASES PER VISTA VERSIÓ MOVIL: */
 @media only screen and (max-width: 1024px) {
 
   /* ------------------- Menu Superior */
-  #menu-escriptori {
+  #menu-escriptori, #submenu-escriptori {
     display: none;
   }
-  .menu-movil {
+  .submenu-movil {
     display: none;
     background-color: #98082c;
     padding: 15px;
@@ -799,7 +811,7 @@ section #oferta #divisor {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
   }
-  .menu-movil input {
+  .submenu-movil input {
     font-family: "Lato", sans-serif;
     padding: 10px;
     border: none;
@@ -812,7 +824,7 @@ section #oferta #divisor {
     width: auto;
   }
   
-  .menu-movil button {
+  .submenu-movil button {
     background-color: #98082c;
     color: #333;
     border: none;
@@ -879,16 +891,13 @@ section #oferta #divisor {
     gap: 2rem;
     margin-left: auto;
   }
-
   #menu-escriptori label {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: normal;
   }
-  #menu-movil{
-    border-top: #e8eef2 5px solid;
-    background-color: #98082c;
-    font-weight: bold;
+  #submenu-movil{
+    display: none;
   }
   #identificador-movil{
     display: none;
