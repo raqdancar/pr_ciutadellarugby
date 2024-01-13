@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .menu_superior {
-  background-color: #98082C;
+  background-color: #98082c;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -12,32 +12,33 @@ body {
   height: 5rem;
 }
 
-.menu_superior label{
-  color: #F2F0E9;
-  font-family: 'Lato', sans-serif;
+.menu_superior label {
+  color: #f2f0e9;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: larger;
 }
 
-.items-menu{
+.items-menu {
   display: flex;
   flex-direction: column;
-  color:#F2F0E9;
+  color: #f2f0e9;
   text-decoration: none;
   font-family: "Lato", sans-serif;
   font-style: oblique;
   font-weight: bold;
 }
+
 .items-menu a:visited {
-  color: #E8EEF2;
-}
-.items-menu a:hover {
-  color: #98082C;
+  color: #e8eef2;
 }
 
+.items-menu a:hover {
+  color: #98082c;
+}
 
 .modul {
-  background-color: #B7536C;
+  background-color: #b7536c;
   border-radius: 19px;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -69,6 +70,10 @@ body {
   margin: 3rem;
 }
 
+.contingut_m2 button{
+  margin-bottom: 1rem;
+}
+
 .contingut_m3 {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -97,8 +102,8 @@ body {
 .contingut_m1 p,
 .contingut_m2 p,
 .contingut_m3 p {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
 }
 
 .contingut_m1 button,
@@ -106,13 +111,13 @@ body {
 .contingut_m3 button,
 .main_content form div button,
 #planol_sobrenosaltres button {
-  background-color: #98082C;
+  background-color: #98082c;
   border-radius: 10px;
   border: 0px;
   height: 3rem;
   width: 8rem;
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   line-height: 3rem;
   /* Igual a la altura del botón para centrar verticalmente */
@@ -122,18 +127,18 @@ body {
 
 .ElementCalendari button {
   font-size: 18px;
-  background-color: #98082C;
+  background-color: #98082c;
   border-radius: 10px;
   border: 0px;
   width: 5rem;
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   height: 100%;
 }
 
 .ElementCalendari {
-  background-color: #B7536C;
+  background-color: #b7536c;
   border-radius: 19px;
   padding: 10px;
   display: flex;
@@ -150,15 +155,14 @@ body {
   border-radius: 25px;
 }
 
-
-
 .module div {
   height: -moz-fit-content;
+  height: -webkit-fit-content;
   height: fit-content;
 }
 
 .module div h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #fff;
   font-size: 20px;
   letter-spacing: 2px;
@@ -169,13 +173,12 @@ body {
 }
 
 .module div p {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #fff;
   text-align: center;
   font-size: 15px;
   padding: 15px;
 }
-
 
 .module #DivBoto {
   display: flex;
@@ -184,7 +187,7 @@ body {
 }
 
 .divisor {
-  background-color: #98082C;
+  background-color: #98082c;
   margin: 2rem;
   height: 5px;
   border-radius: 20px;
@@ -195,7 +198,6 @@ body {
   display: none;
 }
 
-
 .bar {
   width: 25px;
   height: 3px;
@@ -205,30 +207,30 @@ body {
 
 .search-bar {
   display: none;
-  background-color: #98082C;
+  background-color: #98082c;
   padding: 15px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  border-top: #B7536C 5px solid;
+  border-top: #b7536c 5px solid;
 }
 
 .search-bar input {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 10px;
   border: none;
   border-radius: 15px;
   margin-right: 10px;
   margin-top: 15px;
-  background-color: #E8EEF2;
-  color: #98082C;
+  background-color: #e8eef2;
+  color: #98082c;
   font-weight: bold;
 }
 
 .search-bar button {
-  background-color: #98082C;
+  background-color: #98082c;
   color: #333;
   border: none;
   padding: 10px;
@@ -237,7 +239,7 @@ body {
 }
 
 .divdia {
-  background-color: #E8EEF2;
+  background-color: #e8eef2;
   color: #000;
   font-size: 38px;
   font-weight: bold;
@@ -249,7 +251,7 @@ body {
 }
 
 .divdetalls {
-  background-color: #E8EEF2;
+  background-color: #e8eef2;
   color: #000;
   border-radius: 25px;
   width: 100%;
@@ -260,7 +262,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
 
 .loading-container {
@@ -280,27 +281,10 @@ body {
   font-size: 28px;
 }
 
-@media only screen and (max-width: 768px) {
-  .menu-icon {
-    display: block;
-  }
 
-  .search-icon {
-    /* display: none; */
-  }
-
-  .search-bar {
-    /* padding-top: 60px; */
-  }
-}
-
-
-body {
-  margin: 0;
-}
 
 .imageText {
-  background-image: url('../images/pexels-juliana-chyzhova-2648989.jpg');
+  background-image: url("../images/pexels-juliana-chyzhova-2648989.jpg");
   margin-left: -1rem;
   margin-right: -1rem;
   margin-top: -2rem;
@@ -320,15 +304,10 @@ body {
   color: white;
 }
 
-
-
-
 #Icons {
   display: flex;
   justify-content: space-between;
 }
-
-
 
 #Icons.icons_menu>div {
   margin-right: 10px;
@@ -336,7 +315,7 @@ body {
 }
 
 .main_content {
-  background-color: #F2F0E9;
+  background-color: #f2f0e9;
   padding-right: 1rem;
   padding-left: 1rem;
   padding-bottom: 2rem;
@@ -348,14 +327,13 @@ body {
 }
 
 .module {
-  background-color: #B7536C;
+  background-color: #b7536c;
   border-radius: 19px;
   margin: 2rem;
 }
 
-
 .footer {
-  background-color: #98082C;
+  background-color: #98082c;
   padding: 15px;
   color: #fff;
   display: flex;
@@ -376,17 +354,16 @@ body {
 .footer ul {
   list-style: none;
   padding: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-style: italic;
-
 }
 
 .footer p {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .footer img {
-  fill: #E8EEF2;
+  fill: #e8eef2;
   width: 10rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -395,15 +372,16 @@ body {
 .icon-footer {
   display: flex;
   justify-content: space-between;
-
 }
 
 .module div {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
 .module div h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #fff;
   font-size: 20px;
   letter-spacing: 2px;
@@ -413,7 +391,7 @@ body {
 }
 
 .module div p {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #fff;
   text-align: center;
   font-size: 15px;
@@ -421,7 +399,7 @@ body {
 }
 
 .module button {
-  background-color: #98082C;
+  background-color: #98082c;
   border-radius: 10px;
   color: #fff;
   text-align: center;
@@ -439,8 +417,8 @@ body {
 }
 
 .title {
-  color: #98082C;
-  font-family: 'Lato', sans-serif;
+  color: #98082c;
+  font-family: "Lato", sans-serif;
   font-size: 32px;
   font-weight: 700;
   text-align: center;
@@ -466,7 +444,7 @@ body {
   top: 7rem;
   left: 0;
   width: 100%;
-  background-color: #98082C;
+  background-color: #98082c;
   box-sizing: border-box;
 }
 
@@ -479,7 +457,7 @@ body {
 }
 
 .search-bar button {
-  background-color: #98082C;
+  background-color: #98082c;
   color: #333;
   border: none;
   padding: 10px;
@@ -488,7 +466,7 @@ body {
 }
 
 .divdia {
-  background-color: #E8EEF2;
+  background-color: #e8eef2;
   color: #000;
   height: 5rem;
   font-size: 40px;
@@ -499,7 +477,7 @@ body {
 }
 
 .contenedor {
-  background-image: url('/images/pexels-juliana-chyzhova-2648989.jpg');
+  background-image: url("/images/pexels-juliana-chyzhova-2648989.jpg");
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -516,8 +494,8 @@ body {
 }
 
 .text_sensefons {
-  color: #B7536C;
-  font-family: 'Josefin Sans', sans-serif;
+  color: #b7536c;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -540,42 +518,47 @@ img {
   width: 100%;
   box-sizing: border-box;
 }
+
 .textarea_full div {
   display: flex;
   flex-direction: column;
 }
+
 .textarea_full button {
   margin-top: 1rem;
 }
-#PoliticaPrivacitat{
+
+#PoliticaPrivacitat {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 #PoliticaPrivacitat input[type="checkbox"] {
   display: none;
 }
 
-#PoliticaPrivacitat input[type="checkbox"] + label {
+#PoliticaPrivacitat input[type="checkbox"]+label {
   position: relative;
   padding-left: 35px;
   cursor: pointer;
 }
 
-#PoliticaPrivacitat input[type="checkbox"] + label:before {
-  content: '';
+#PoliticaPrivacitat input[type="checkbox"]+label:before {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 25px;
   height: 25px;
-  border: 2px solid #98082C;
+  border: 2px solid #98082c;
   border-radius: 5px;
 }
 
-#PoliticaPrivacitat input[type="checkbox"]:checked + label:before {
-  background-color: #98082C;
+#PoliticaPrivacitat input[type="checkbox"]:checked+label:before {
+  background-color: #98082c;
 }
+
 #ContenidorContacte h1 {
   font-size: 50px;
   font-weight: 700;
@@ -586,9 +569,9 @@ img {
 
 #ContenidorContacte p,
 #ContenidorContacte form div label {
-  font-family: 'Josefin Sans', sans-serif;
-  color: #B7536C;
-  font-size: 20px
+  font-family: "Josefin Sans", sans-serif;
+  color: #b7536c;
+  font-size: 20px;
 }
 
 #ContenidorContacte p {
@@ -597,7 +580,7 @@ img {
 
 #ContenidorContacte .module,
 #ContenidorCataleg section {
-  background-color: #98082C;
+  background-color: #98082c;
 }
 
 #ContenidorContacte .module p {
@@ -607,7 +590,7 @@ img {
 }
 
 #ContenidorContacte .module h1 {
-  color: #E8EEF2;
+  color: #e8eef2;
   text-align: center;
   font-weight: bold;
 }
@@ -615,18 +598,16 @@ img {
 #ContenidorContacte .module iframe {
   border: 5px solid black;
   border-radius: 10%;
-
 }
 
 #ContenidorContacte form div input {
-  background-color: #B7536C;
+  background-color: #b7536c;
   color: white;
   border: none;
   border-radius: 25px;
   height: 1.5rem;
   font-size: large;
   padding: 5px;
-
 }
 
 #ContenidorContacte #planol_sobrenosaltres {
@@ -639,7 +620,7 @@ img {
 }
 
 #ContenidorContacte textarea {
-  background-color: #B7536C;
+  background-color: #b7536c;
   color: white;
   border: none;
   border-radius: 25px;
@@ -659,29 +640,33 @@ img {
 .full-width {
   width: 100%;
 }
+
 #firstRow {
   display: flex;
   justify-content: space-between;
 }
-.left-content, .right-content {
-  width: 45%; /* Ajusta este valor según tus necesidades */
+
+.left-content,
+.right-content {
+  width: 45%;
+  /* Ajusta este valor según tus necesidades */
 }
+
 #SecondRow {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.textarea_full {
-  width: 100%; 
 
+.textarea_full {
+  width: 100%;
 }
+
 #ContenidorContacte .right-content div {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-
-
 
 #ContenidorContacte form input,
 #ContenidorContacte form textarea {
@@ -695,7 +680,7 @@ img {
   border: 0px;
   width: 8rem;
   color: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   font-size: large;
   width: auto;
@@ -707,16 +692,13 @@ img {
   font-weight: bold;
   font-size: 35px;
   color: #fff;
-
 }
 
 #planol_sobrenosaltres h3 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
-
 }
-
 
 /* Oculta el radio button original */
 #si,
@@ -727,7 +709,7 @@ img {
 /* Crea un nuevo radio button */
 #si+label:before,
 #no+label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   /* Ajusta el tamaño del radio button aquí */
@@ -736,9 +718,9 @@ img {
   margin-right: 10px;
   border-radius: 50%;
   /* Hace que el radio button sea redondo */
-  border: 2px solid #B7536C;
+  border: 2px solid #b7536c;
   /* Ajusta el color del borde aquí */
-  background-color: #B7536C;
+  background-color: #b7536c;
   /* Ajusta el color de fondo aquí */
 }
 
@@ -761,7 +743,7 @@ img {
 } */
 
 #oferta {
-  background-color: #E8EEF2;
+  background-color: #e8eef2;
   padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -781,7 +763,7 @@ section #oferta p {
 }
 
 section #oferta #divisor {
-  background-color: #98082C;
+  background-color: #98082c;
   height: 5px;
   border-radius: 10px;
 }
@@ -790,12 +772,12 @@ section #oferta #divisor {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #E8EEF2;
+  background-color: #e8eef2;
   border: none;
   border-radius: 25px;
   text-align: left;
   font-size: 18px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: bold;
   height: 5rem;
   width: 15rem;
@@ -803,8 +785,9 @@ section #oferta #divisor {
   /* Añade un poco de espacio a los lados del botón */
   margin-bottom: 5px;
 }
-.icon-filtrar{
-  width: 2.5rem;  /* Cambia esto al ancho que desees */
+
+.icon-filtrar {
+  width: 2.5rem;
 }
 
 #butonsaccions,
@@ -821,20 +804,18 @@ section #oferta #divisor {
   border: none;
   border-radius: 25px;
   font-size: 18px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   height: 4rem;
   width: 8rem;
   color: white;
-
 }
 
 .botopreu {
   background-color: black;
-
 }
 
 .botocomprar {
-  background-color: #98082C;
+  background-color: #98082c;
 }
 
 #peudeoferta h3 {
@@ -859,13 +840,5 @@ section #oferta #divisor {
 @media only screen and (max-width: 768px) {
   .menu-icon {
     display: block;
-  }
-
-  .search-icon {
-    /* display: none; */
-  }
-
-  .search-bar {
-    /* padding-top: 60px; */
   }
 }
