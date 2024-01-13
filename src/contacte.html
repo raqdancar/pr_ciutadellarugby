@@ -22,6 +22,9 @@
                 <img src="/images/logo.svg" alt="Logo" width="80rem">
             </a>
         </div>
+        <div>
+            <label>Contacte</label>
+        </div>
         <div id="Icons" class="icons_menu">
             <div class="menu-icon" id="menu-icon">
                 <div class="bar"></div>
@@ -32,7 +35,7 @@
         </div>
     </div>
     <div class="search-bar" id="search-bar">
-        <div class="menu">
+        <div class="items-menu">
             <a href="/src/index.html">Inicio</a>
             <a href="/src/sobrenosaltres.html">Sobre Nosaltres</a>
             <a href="/src/contacte.html">Contacte</a>
@@ -47,45 +50,49 @@
         <h1 id="titlecontacte" class="title">Estem aquí per escoltar-te</h1>
         <p>Vols formar part del club?</p>
         <form class="form-content">
-            <div class="left-content">
-                <label for="exampleInputEmail1">Nom complert:</label>
-                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="firstRow">
+                <div class="left-content">
+                    <label for="exampleInputEmail1">Nom complert:</label>
+                        <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div>
+                            <label>Telèfon:</label>
+                            <input type="number" id="exampleInputPassword1">
+                        </div>
+                        <div>
+                            <label>Correu electronic:</label>
+                            <input type="email" id="exampleInputPassword1">
+                        </div>
+                </div>
+                <div class="right-content">
+                    <label>Ets soci del club?</label>
                     <div>
-                        <label>Telèfon:</label>
-                        <input type="number" id="exampleInputPassword1">
-                    </div>
-                    <div>
-                        <label>Correu electronic:</label>
-                        <input type="email" id="exampleInputPassword1">
-                    </div>
-            </div>
-            <div class="right-content">
-                <label>Ets soci del club?</label>
-                <div>
-                    <div>
-                        <input type="radio" id="si" name="soci" value="si">
-                        <label for="si">Si</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="no" name="soci" value="no">
-                        <label for="no">No</label>
+                        <div>
+                            <input type="radio" id="si" name="soci" value="si">
+                            <label for="si">Si</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="no" name="soci" value="no">
+                            <label for="no">No</label>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="textarea_full">
-                <div>
-                    <label>Assumpte</label>
-                    <input type="text" id="exampleInputPassword1">
+            <div id="SecondRow">
+                <div class="textarea_full">
+                    <div>
+                        <label>Assumpte</label>
+                        <input type="text" id="exampleInputPassword1">
+                    </div>
+                    <div>
+                        <label>En que et podem ajudar?</label>
+                        <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div id="PoliticaPrivacitat">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Accepto la politica de privacitat</label>
+                    </div>
+                    <button class="buttonVeureMes">Enviar</button>
                 </div>
-                <div>
-                    <label>En que et podem ajudar?</label>
-                    <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <div>
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Accepto la politica de privacitat</label>
-                </div>
-                <button class="buttonVeureMes">Enviar</button>
             </div>
         </form>
 
