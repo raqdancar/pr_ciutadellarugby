@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.getElementById('menu-icon');
-    const searchBar = document.getElementById('menu-movil');
+    const menuMovil = document.getElementById('menu-movil');
     const searchIcon = document.getElementById('search-icon');
     const closeSearch = document.getElementById('close-search');
   
     menuIcon.addEventListener('click', function () {
-      searchBar.style.display = (searchBar.style.display === 'block') ? 'none' : 'block';
+      menuMovil.style.display = (menuMovil.style.display === 'block') ? 'none' : 'block';
     });
   
     searchIcon.addEventListener('click', function () {
-      searchBar.style.display = 'block';
+      menuMovil.style.display = 'block';
     });
   
     closeSearch.addEventListener('click', function () {
-      searchBar.style.display = 'none';
+      menuMovil.style.display = 'none';
     });
   });
   

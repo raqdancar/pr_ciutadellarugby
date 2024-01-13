@@ -379,22 +379,9 @@ body {
 
 
 
-.menu-movil input {
-  width: 80%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-}
 
-.menu-movil button {
-  background-color: #98082c;
-  color: #333;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
+
 
 .divdia {
   background-color: #e8eef2;
@@ -436,9 +423,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-}
-
-#MenorcaSiuleta {
 }
 
 .svg_menorca {
@@ -530,6 +514,8 @@ img {
 #ContenidorContacte .module iframe {
   border: 5px solid black;
   border-radius: 10%;
+  width: 90%;
+  padding: 1rem;
 }
 
 #ContenidorContacte form div input {
@@ -789,10 +775,17 @@ section #oferta #divisor {
 .icon-footer p {
   font-family: "Josefin Sans", sans-serif;
 }
+
+#menu-escriptori a{
+  text-decoration: none;
+}
 /* CLASES PER VISTA VERSIÓ MOVIL: */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
   /* ------------------- Menu Superior */
+  #menu-escriptori {
+    display: none;
+  }
   .menu-movil {
     display: none;
     background-color: #98082c;
@@ -806,7 +799,6 @@ section #oferta #divisor {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
   }
-  
   .menu-movil input {
     font-family: "Lato", sans-serif;
     padding: 10px;
@@ -817,6 +809,7 @@ section #oferta #divisor {
     background-color: #e8eef2;
     color: #98082c;
     font-weight: bold;
+    width: auto;
   }
   
   .menu-movil button {
@@ -828,7 +821,6 @@ section #oferta #divisor {
     cursor: pointer;
   }
   /* ------------------- */
-
 
 
   /* ------------------- Footer */
@@ -847,11 +839,9 @@ section #oferta #divisor {
     font-family: "Josefin Sans", sans-serif;
     font-style: italic;
   }
-
   .icon-footer p {
     font-family: "Josefin Sans", sans-serif;
   }
-
   .icon-footer {
     display: flex;
     flex-direction: column;
@@ -880,6 +870,33 @@ section #oferta #divisor {
 
 /* CLASES PER VISTA VERSIÓ ESCRIPTORI: */
 @media only screen and (min-width: 769px) {
+  #menu-superior {
+    display: flex;
+    gap: 1rem;
+  }
+  #menu-escriptori {
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+  }
+
+  #menu-escriptori label {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  #menu-movil{
+    border-top: #e8eef2 5px solid;
+    background-color: #98082c;
+    font-weight: bold;
+  }
+  #identificador-movil{
+    display: none;
+  }
+  #items-menu {
+    display: none;
+  }
+
   .footer {
     background-color: #98082c;
     padding: 15px;
