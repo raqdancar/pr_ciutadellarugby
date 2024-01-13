@@ -6,26 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="Menu Superior" class="navbar">
+    <div id="Menu Superior" class="menu_superior">
         <div id="Logo" class="logo">
             <a href="/src/index.html">
                 <img src="/images/logo.svg" alt="Logo" width="80rem">
             </a>
         </div>
         <div id="Icons" class="icons_menu">
-            <div class="search-icon" id="search-icon">
-                <img src="/images/icons/search.svg" alt="Buscar" width="5rem">
-            </div>
             <div class="menu-icon" id="menu-icon">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+            <img src="/images/icons/search.svg" alt="Buscar">
         </div>
     </div>
     <div class="search-bar" id="search-bar">
@@ -42,44 +42,57 @@
 
     <div id="ContenidorPrincipal" class="main_content">
         <div class="imageText">
-            Menorca, l'illa del rugby
+            <div class="textContainer">
+                <h1>Menorca, l'illa del rugby</h1>
+            </div>
         </div>
+        
         <h1 class="title">Descobreix el cor del Ciutadella Rugby Club</h1>
-        <P>
+        <p class="text_sensefons">
             Benvinguts al Ciutadella Rugby Club, una comunitat apassionada que trascendeix el camp de rugby. Amb la
             nostra base a Ciutadella de Menorca, celebrem la rica història del club i la bellesa de la nostra
             localització. Amb un compromís profund amb els valors esportius, la inclusió i l'esperit comunitari, aspirem
             a fer créixer el rugby i deixar una empremta positiva a la nostra estimada Ciutadella
-        </P>
-        <img src="../images/pexels-ollie-craig-5585969.jpg" alt="Pilota tombada a la gespa" width="80rem"
+        </p>
+        <img src="../images/pexels-ollie-craig-5585969.jpg" alt="Vista aerea del camp de rugby"
             class="rounded-image">
         <h1 class="title">Travessem Dècades de Passió i Esforç</h1>
-        <P>
+        <p class="text_sensefons">
             El nostre club té una història rica i vibrant que es remunta a diverses dècades. Des dels seus modestos
             inicis fins a esdeveniments èpics i triomfs, cada capítol de la nostra història està marcat per la passió
             pel rugby, la dedicació dels nostres membres i la construcció d'una comunitat que perdura en el temps.
             Explora amb nosaltres el llegat del Ciutadella Rugby Club i celebra els moments que han format la nostra
             identitat única.
-        </P>
-        <img src="../images/pexels-isaac-garcia-16951062.jpg" alt="Pilota tombada a la gespa" width="80rem"
+        </p>
+        <img src="../images/pexels-isaac-garcia-16951062.jpg" alt="Jugador de rugby posant la pilota en joc"
             class="rounded-image">
     </div>
     <footer class="footer">
-        <!-- Aquí puedes incluir el pie de página con información adicional o enlaces -->
-        <p>&copy; 2023 Ciutadella Rugby Club. Todos los derechos reservados.</p>
+        <img src="../images/menorca_white.svg" alt="Menorca Siuleta" />
+
+        <ul class="">
+            <li class="list-group-item">Sobre nosaltres</li>
+            <li class="list-group-item">Serveis</li>
+            <li class="list-group-item">Marca</li>
+            <li class="list-group-item">Sostenibilitat</li>
+            <li class="list-group-item">Espai soci</li>
+            <a href="/src/sobrenosaltres.html">
+                <li class="list-group-item">Contacte</li>
+            </a>
+        </ul>
+
+        <div class="icon-footer">
+            <a href="#"><img class="icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img class="icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>
+            <a href="#"><img class="icon" src="/images/icons/instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img class="icon" src="/images/icons/linkedin.svg" alt="LinkedIn" /></a>
+            <a href="#"><img class="icon" src="/images/icons/youtube.svg" alt="LinkedIn" /></a>
+        </div>
+        <p>UOC 2023 - by Daniel Larrosa Mujico</p>
     </footer>
 
     <!-- Agrega enlaces a tus archivos de scripts JavaScript aquí si es necesario -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

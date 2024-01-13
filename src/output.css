@@ -1,66 +1,89 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
-.navbar {
+.menu_superior {
   background-color: #98082C;
-  padding: 3rem;
+  padding: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.main_content{
-  background-color: #F2F0E9;
-}
-
-.modul{
+.modul {
   background-color: #B7536C;
   border-radius: 19px;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
-
   display: flex;
-  align-items: center; /* Alinea verticalmente al centro */
+
 }
 
-.contingut_m1, .contingut_m2{
-  color:white;
-  text-align: center; /* Alinea el texto al centro */
-  flex: 1; /* Distribuye el espacio igualmente entre ambas columnas */
+.contingut_m1,
+.contingut_m2,
+.contingut_m3 {
+  color: white;
+  text-align: center;
+  flex: 1;
   display: flex;
-  flex-direction: column; /* Apila los elementos verticalmente */
-  justify-content: center; /* Centra verticalmente el contenido */
-  align-items: center; /* Centra horizontalmente el contenido */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.contingut_m1{
-  margin: 1rem;
+
+.contingut_m1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1rem;
 }
-.contingut_m2{
+
+.contingut_m2 {
   margin: 3rem;
 }
-.imatge-esquerra{
-  flex: 0.8;
+
+.contingut_m3 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.imatge-esquerra {
+  flex: 1;
   margin: 1rem;
 }
+
 .imatge-esquerra img {
   width: auto;
   height: 429px;
-  flex-shrink: 0; /* Evita que la imagen se contraiga en caso de poco espacio */
-}
-.contingut_m1 h1{
-  font-size: 24px;
-  word-spacing: 10px; /* Ajusta el valor según tus necesidades */
-}
-.contingut_m1 p{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size:15px;
+  flex-shrink: 0;
+  /* Evita que la imagen se contraiga en caso de poco espacio */
 }
 
-.contingut_m1 button{
-  background-color:#98082C;
+.contingut_m1 h1,
+.contingut_m3 h1 {
+  font-size: 24px;
+  word-spacing: 10px;
+}
+
+.contingut_m1 p,
+.contingut_m2 p,
+.contingut_m3 p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+}
+
+.contingut_m1 button,
+.contingut_m2 button,
+.contingut_m3 button,
+.ElementCalendari button,
+.main_content form div button,
+#planol_sobrenosaltres button {
+  background-color: #98082C;
   border-radius: 10px;
   border: 0px;
   height: 3rem;
@@ -68,31 +91,41 @@ body {
   color: #fff;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  line-height: 3rem; /* Igual a la altura del botón para centrar verticalmente */
-  text-align: center; /* Centra el texto horizontalmente */
+  line-height: 3rem;
+  /* Igual a la altura del botón para centrar verticalmente */
+  text-align: center;
+  /* Centra el texto horizontalmente */
 }
 
-.ElementCalendari{
+.ElementCalendari button {
+  font-size: 12px;
+}
+
+.ElementCalendari {
   background-color: #B7536C;
   border-radius: 19px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.rounded-image{
-  border-radius: 25px;  
+.rounded-image {
+  border-radius: 25px;
 }
 
-.footer{
-  background-color: #98082C;
-  padding: 15px;
-  color: #fff;
-}
 
-.module div{
+
+.module div {
   height: -moz-fit-content;
   height: fit-content;
 }
 
-.module div h1{
+.module div h1 {
   font-family: 'Lato', sans-serif;
   color: #fff;
   font-size: 20px;
@@ -103,7 +136,7 @@ body {
   padding: 15px;
 }
 
-.module div p{
+.module div p {
   font-family: 'Josefin Sans', sans-serif;
   color: #fff;
   text-align: center;
@@ -112,15 +145,14 @@ body {
 }
 
 
-
-.module #DivBoto{
+.module #DivBoto {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.divisor{
-  background-color:#98082C;
+.divisor {
+  background-color: #98082C;
   margin: 2rem;
   height: 5px;
   border-radius: 20px;
@@ -131,23 +163,12 @@ body {
   display: none;
 }
 
-.title{
-  color:#98082C;
-  font-size: 32px;
-  font-weight: bold;
-}
 
 .bar {
   width: 25px;
   height: 3px;
   background-color: #fff;
   margin: 5px 0;
-}
-
-.search-icon {
-  cursor: pointer;
-  font-size: 20px;
-  color: #fff;
 }
 
 .search-bar {
@@ -178,15 +199,40 @@ body {
   cursor: pointer;
 }
 
-.divdia{
+.divdia {
   background-color: #E8EEF2;
   color: #000;
-  height: 5rem;
-  font-size: 40px;
+  font-size: 38px;
+  font-weight: bold;
   border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.divdetalls {
+  background-color: #E8EEF2;
+  color: #000;
+  border-radius: 25px;
+  ;
+
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* Ajusta este valor según tus necesidades */
+}
+
+.loading-container img {
+  width: 3rem;
+}
+
+.loading-container h2 {
+  font-weight: 400;
+  font-size: 28px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -208,101 +254,137 @@ body {
   margin: 0;
 }
 
-.imageText{
-  background-color: url('../images/pexels-juliana-chyzhova-2648989.jpg');
+.imageText {
+  background-image: url('../images/pexels-juliana-chyzhova-2648989.jpg');
+  margin-left: -1rem;
+  margin-right: -1rem;
+
   background-size: cover;
-  background-position: center;
-  height: 300px; /* Ajusta la altura según sea necesario */
+  height: 300px;
+  /* Ajusta la altura según sea necesario */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
-  /* color: white; Color del texto */
-  /* text-align: center; Alineación del texto */
-  /* font-size: 24px; Tamaño del texto */
 }
 
-.icon-footer {
+.imageText .textContainer {
+  background-color: rgba(152, 8, 44, 0.5);
+  padding: 2rem;
+  /* Ajusta este valor según tus necesidades */
+  border-radius: 25px;
+  color: white;
+}
+
+
+
+
+#Icons {
   display: flex;
+  justify-content: space-between;
 }
 
-.icon {
-  width: 24px; /* Ancho de cada icono */
-  height: 24px; /* Altura de cada icono */
-  margin-right: 10px; /* Espacio entre los iconos */
+
+
+#Icons.icons_menu>div {
+  margin-right: 10px;
+  /* Ajusta el margen según sea necesario para separar los iconos */
 }
 
-.siluetafooter{
-  fill: #F2F0E9;
-}
-
-#Icons.icons_menu {
-  display: flex;
-}
-
-#Icons.icons_menu > div {
-  margin-right: 10px; /* Ajusta el margen según sea necesario para separar los iconos */
-}
-
-.main_content{
+.main_content {
   background-color: #F2F0E9;
-  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
 }
-.module{
+
+.main_content img {
+  height: 100%;
+}
+
+.module {
   background-color: #B7536C;
   border-radius: 19px;
   margin: 2rem;
 }
-.ElementCalendari{
-  background-color: #B7536C;
-  border-radius: 19px;
-}
 
-.footer{
+
+.footer {
   background-color: #98082C;
   padding: 15px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.module div{
+.icon {
+  width: 24px;
+  /* Ancho de cada icono */
+  height: 24px;
+  /* Altura de cada icono */
+  margin-right: 10px;
+  /* Espacio entre los iconos */
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: italic;
+
+}
+
+.footer p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.footer img {
+  fill: #E8EEF2;
+  width: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.icon-footer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.module div {
   height: fit-content;
 }
-.module div h1{
-  font-family: 'Lato', sans-serif; 
+
+.module div h1 {
+  font-family: 'Lato', sans-serif;
   color: #fff;
   font-size: 20px;
   letter-spacing: 2px;
   word-spacing: 0px;
-  font-weight: 700;
   text-align: center;
   padding: 15px;
 }
-.module div p{
-  font-family: 'Josefin Sans', sans-serif; 
+
+.module div p {
+  font-family: 'Josefin Sans', sans-serif;
   color: #fff;
   text-align: center;
   font-size: 15px;
   padding: 15px;
 }
 
-.module button{
-  background-color:#98082C;
+.module button {
+  background-color: #98082C;
   border-radius: 10px;
   color: #fff;
   text-align: center;
 }
 
-.module #DivBoto{
+.module #DivBoto {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.divisor{
-  background-color:#98082C;
-  margin: 2rem;
-  height: 5px;
-  border-radius: 20px;
 }
 
 .menu-icon {
@@ -310,11 +392,12 @@ body {
   display: none;
 }
 
-.title{
-  color:#98082C;
+.title {
+  color: #98082C;
+  font-family: 'Lato', sans-serif;
   font-size: 32px;
-  font-weight: bold;
-  
+  font-weight: 700;
+  text-align: center;
 }
 
 .bar {
@@ -332,13 +415,13 @@ body {
 
 .search-bar {
   display: none;
-  background-color: #98082C;
   padding: 15px;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 100%;
   left: 0;
   width: 100%;
   box-sizing: border-box;
+  background-color: #98082C;
 }
 
 .search-bar input {
@@ -358,7 +441,7 @@ body {
   cursor: pointer;
 }
 
-.divdia{
+.divdia {
   background-color: #E8EEF2;
   color: #000;
   height: 5rem;
@@ -366,45 +449,326 @@ body {
   border-radius: 25px;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .contenedor {
   background-image: url('/images/pexels-juliana-chyzhova-2648989.jpg');
   background-size: cover;
   background-position: center;
-  height: 300px; /* Ajusta la altura según sea necesario */
+  height: 300px;
+  /* Ajusta la altura según sea necesario */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white; /* Color del texto */
-  text-align: center; /* Alineación del texto */
-  font-size: 24px; /* Tamaño del texto */
+  color: white;
+  /* Color del texto */
+  text-align: center;
+  /* Alineación del texto */
+  font-size: 24px;
+  /* Tamaño del texto */
 }
 
+.text_sensefons {
+  color: #B7536C;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+}
 
-
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-#MenorcaSiuleta{
+#MenorcaSiuleta {}
+
+.svg_menorca {
+  width: 100%;
+}
+
+/* PAGINA CONTACTE */
+.textarea_full {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#ContenidorContacte h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 0px;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#ContenidorContacte p,
+#ContenidorContacte form div label {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #B7536C;
+  font-size: 20px
+}
+
+#ContenidorContacte p {
+  text-align: center;
+}
+
+#ContenidorContacte .module,
+#ContenidorCataleg section {
+  background-color: #98082C;
+}
+
+#ContenidorContacte .module p {
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#ContenidorContacte .module h1 {
+  color: #E8EEF2;
+  text-align: center;
+  font-weight: bold;
+}
+
+#ContenidorContacte .module iframe {
+  border: 5px solid black;
+  border-radius: 10%;
 
 }
 
-.svg_menorca{
+#ContenidorContacte form div input {
+  background-color: #B7536C;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  height: 1.5rem;
+  font-size: large;
+  padding: 5px;
+
+}
+
+#ContenidorContacte #planol_sobrenosaltres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#ContenidorContacte textarea {
+  background-color: #B7536C;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  height: 7rem;
+  font-size: large;
+  padding: 1rem;
+}
+
+#ContenidorContacte form div button {
+  font-size: 18px;
+}
+
+#ContenidorContacte .form-content {
+  flex: 1;
+}
+
+.full-width {
   width: 100%;
+}
+
+#ContenidorContacte .right-content div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#ContenidorContacte form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#ContenidorContacte form input,
+#ContenidorContacte form textarea {
+  margin-bottom: 1rem;
+  /* Ajusta este valor según tus necesidades */
+}
+
+#planol_sobrenosaltres button {
+  background-color: black;
+  border-radius: 25px;
+  border: 0px;
+  width: 8rem;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: large;
+  width: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#planol_sobrenosaltres h2 {
+  font-weight: bold;
+  font-size: 35px;
+  color: #fff;
+
+}
+
+#planol_sobrenosaltres h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+}
+
+
+/* Oculta el radio button original */
+#si,
+#no {
+  display: none;
+}
+
+/* Crea un nuevo radio button */
+#si+label:before,
+#no+label:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  /* Ajusta el tamaño del radio button aquí */
+  height: 20px;
+  /* Ajusta el tamaño del radio button aquí */
+  margin-right: 10px;
+  border-radius: 50%;
+  /* Hace que el radio button sea redondo */
+  border: 2px solid #B7536C;
+  /* Ajusta el color del borde aquí */
+  background-color: #B7536C;
+  /* Ajusta el color de fondo aquí */
+}
+
+/* Muestra un indicador cuando el radio button está seleccionado */
+#si:checked+label:before,
+#no:checked+label:before {
+  background-color: black;
+  /* Ajusta el color del indicador aquí */
+}
+
+/* PAGINA CATALEG */
+
+#ContenidorCataleg section {
+  padding: 2rem;
+  border-radius: 36px;
+}
+
+#ContenidorCataleg h1 {
+  margin-top: -2rem;
+}
+
+#oferta {
+  background-color: #E8EEF2;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 15px;
+}
+
+section #oferta h1 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  font-size: 30px;
+}
+
+section #oferta p {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  font-size: 15px;
+}
+
+section #oferta #divisor {
+  background-color: #98082C;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.botofiltrar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E8EEF2;
+  border: none;
+  border-radius: 25px;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  height: 5rem;
+  width: 15rem;
+  padding: 0 1rem;
+  /* Añade un poco de espacio a los lados del botón */
+  margin-bottom: 5px;
+}
+.icon-filtrar{
+  width: 2.5rem;  /* Cambia esto al ancho que desees */
+}
+
+#butonsaccions,
+#peudeoferta {
+  display: flex;
+  justify-content: space-between;
+}
+
+#butonsaccions {
+  margin-top: 5px;
+}
+
+#butonsaccions button {
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  height: 4rem;
+  width: 8rem;
+  color: white;
+
+}
+
+.botopreu {
+  background-color: black;
+
+}
+
+.botocomprar {
+  background-color: #98082C;
+}
+
+#peudeoferta h3 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.peu-ofertaflex {
+  display: flex;
+  align-items: center;
+}
+
+.peu-ofertaflex img {
+  width: 1rem;
+  margin-right: 4px;
 }
 
 @media only screen and (max-width: 768px) {
   .menu-icon {
-      display: block;
+    display: block;
   }
+
   .search-icon {
-      display: none;
+    display: none;
   }
+
   .search-bar {
-      padding-top: 60px;
+    padding-top: 60px;
   }
 }

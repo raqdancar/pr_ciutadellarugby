@@ -6,25 +6,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <div id="Menu Superior" class="navbar">
+    <div id="Menu Superior" class="menu_superior">
         <div id="Logo" class="logo">
             <a href="/src/index.html">
                 <img src="/images/logo.svg" alt="Logo" width="80rem">
             </a>
         </div>
         <div id="Icons" class="icons_menu">
-            <div class="search-icon" id="search-icon">
-                <img src="/images/icons/search.svg" alt="Buscar" width="5rem">
-            </div>
             <div class="menu-icon" id="menu-icon">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+            <img src="/images/icons/search.svg" alt="Buscar">
         </div>
     </div>
     <div class="search-bar" id="search-bar">
@@ -39,58 +43,75 @@
     </div>
 
 
-    <div id="ContenidorPrincipal" class="main_content">
-        <h1 class="title">Estem aquí per escoltar-te</h1>
+    <div id="ContenidorContacte" class="main_content">
+        <h1 id="titlecontacte" class="title">Estem aquí per escoltar-te</h1>
         <p>Vols formar part del club?</p>
-        <form>
-            <div class="form-group">
+        <form class="form-content">
+            <div class="left-content">
                 <label for="exampleInputEmail1">Nom complert:</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                
+                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div>
+                        <label>Telèfon:</label>
+                        <input type="number" id="exampleInputPassword1">
+                    </div>
+                    <div>
+                        <label>Correu electronic:</label>
+                        <input type="email" id="exampleInputPassword1">
+                    </div>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Telèfon:</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <div class="right-content">
+                <label>Ets soci del club?</label>
+                <div>
+                    <div>
+                        <input type="radio" id="si" name="soci" value="si">
+                        <label for="si">Si</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="no" name="soci" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Correu electronic:</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Assumpte</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">En que et podem ajudar?</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Accepto la politica de privacitat</label>
-            </div>
-            <button class="buttonVeureMes">Enviar
-            </button>
-
-            <p>Et respondrem el més aviat possible!</p>
-
-            <div class="module grid grid-cols-1 grid-rows-3 gap-0">
-                <div class="">
-                    <p>Si tens alguna pregunta, suggeriment o vols connectar amb nosaltres, no dubtis a enviar-nos un missatge. Estem compromesos a construir una comunitat basada en la comunicació i l'apassionament pel rugby. Completa el formulari de contacte a continuació i ens posarem en contacte amb tu tan aviat com sigui possible.</p>
-                    <h1>On trobar-nos</h1>
+            <div class="textarea_full">
+                <div>
+                    <label>Assumpte</label>
+                    <input type="text" id="exampleInputPassword1">
                 </div>
                 <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12225.302041380643!2d3.8347250335738337!3d40.00117608145081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be040aab08890f%3A0x8145a42f36707c1e!2sCiudadela%20de%20Menorca%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1704822565558!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <h2>Gràcies per ser part de la nostra història.</h2>
-                    <h3>Telèfon de contacte:</h3>
+                    <label>En que et podem ajudar?</label>
+                    <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <div id="DivBoto" class="">
-
-                    <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
-                        +34-971-859-125
-                    </button>
+                <div>
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Accepto la politica de privacitat</label>
                 </div>
+                <button class="buttonVeureMes">Enviar</button>
             </div>
+        </form>
+
+        <p>Et respondrem el més aviat possible!</p>
+
+        <div class="module">
+            <div>
+                <p>Si tens alguna pregunta, suggeriment o vols connectar amb nosaltres, no dubtis a enviar-nos
+                    un missatge. Estem compromesos a construir una comunitat basada en la comunicació i
+                    l'apassionament pel rugby. Completa el formulari de contacte a continuació i ens posarem en
+                    contacte amb tu tan aviat com sigui possible.</p>
+                <h1>On trobar-nos</h1>
+            </div>
+            <div id="planol_sobrenosaltres">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12225.302041380643!2d3.8347250335738337!3d40.00117608145081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be040aab08890f%3A0x8145a42f36707c1e!2sCiudadela%20de%20Menorca%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1704822565558!5m2!1ses!2ses"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>Gràcies per ser part de la nostra història.</h3>
+                <h2>Telèfon de contacte:</h2>
+                <button class="buttonVeureMes">
+                    +34-971-859-125
+                </button>
+            </div>
+                
+        </div>
         </form>
     </div>
     <footer class="footer">
@@ -101,7 +122,7 @@
         </div>
         <div class="row gx-1">
             <div class="col-12">
-                <ul class="">
+                <ul>
                     <li class="list-group-item">Sobre nosaltres</li>
                     <li class="list-group-item">Serveis</li>
                     <li class="list-group-item">Marca</li>
@@ -132,15 +153,6 @@
 
     <!-- Agrega enlaces a tus archivos de scripts JavaScript aquí si es necesario -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

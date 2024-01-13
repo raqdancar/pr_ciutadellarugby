@@ -6,25 +6,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <div id="Menu Superior" class="navbar">
+    <div id="Menu Superior" class="menu_superior">
         <div id="Logo" class="logo">
             <a href="/src/index.html">
                 <img src="/images/logo.svg" alt="Logo" width="80rem">
             </a>
         </div>
         <div id="Icons" class="icons_menu">
-            <div class="search-icon" id="search-icon">
-                <img src="/images/icons/search.svg" alt="Buscar" width="5rem">
-            </div>
             <div class="menu-icon" id="menu-icon">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+            <img src="/images/icons/search.svg" alt="Buscar">
         </div>
     </div>
     <div class="search-bar" id="search-bar">
@@ -39,84 +43,77 @@
     </div>
 
 
-    <div id="ContenidorPrincipal" class="main_content">
+    <div id="ContenidorCataleg" class="main_content">
         <h1 class="title">Catàleg de productes</h1>
+
         <p>Des d’aquesta pàgina pots comprar i vendre els teus productes relacionats amb el club.</p>
-        <div class="module grid grid-cols-1 grid-rows-3 gap-0">
-            <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
+
+        <section>
+            <button class="botofiltrar">
                 Filtrar productes
+                <img class="icon-filtrar" src="/images/icons/filtrar_open.svg" alt="Filtrar"
+                >
             </button>
-            <div>
-                <img src="/images/pexels-miguel-marimon-13527460.jpg" alt="" height="25px" class="rounded-image">
+
+            <div id="oferta">
+                <img src="/images/pexels-miguel-marimon-13527460.jpg" alt="" class="rounded-image">
                 <h1>Pilota Gilbert</h1>
-                <p>Pilota de Rugby marca Gilbert en perfecte estat, es ven per que en tenim moltes a la nostre secció.</p>
-                <div class="divisor" />
-                <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
-                    15€
-                </button>
-                <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
-                    Comprar
-                </button>
-                <h3>Ciutadella de menorca</h3>
-                <h3>REF06521</h3>
+                <p>Pilota de Rugby marca Gilbert en perfecte estat, es ven per que en tenim moltes a la nostre secció.
+                </p>
+                <div id="divisor"></div>
 
-            </div>
-            <div id="DivBoto" class="">
+                <div id="butonsaccions">
+                    <button class="botopreu">
+                        15€
+                    </button>
+                    <button class="botocomprar">
+                        Comprar
+                    </button>
+                </div>
 
-                <button class="buttonVeureMes rounded-lg p-4 text-lg font-normal">
-                    +34-971-859-125
-                </button>
+
+
+                <div id="peudeoferta">
+                    <div class="peu-ofertaflex">
+                        <img src="/images/icons/location.svg" alt="Ubicació">
+                        <h3>Ciutadella de menorca</h3>
+                    </div>
+                    <div class="peu-ofertaflex">
+
+                    <img src="/images/icons/clipboard.svg" alt="Copiar">
+                    <h3>REF06521</h3>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
     </div>
-    <footer class="footer">
-        <div class="row gx-1">
-            <div class="col-12">
-                <img src="../images/menorca_white.svg" alt="Menorca Siuleta">
-            </div>
-        </div>
-        <div class="row gx-1">
-            <div class="col-12">
-                <ul class="">
-                    <li class="list-group-item">Sobre nosaltres</li>
-                    <li class="list-group-item">Serveis</li>
-                    <li class="list-group-item">Marca</li>
-                    <li class="list-group-item">Sostenibilitat</li>
-                    <li class="list-group-item">Espai soci</li>
-                    <a href="/src/sobrenosaltres.html">
-                        <li class="list-group-item">Contacte</li>
-                    </a>
-                </ul>
-            </div>
-        </div>
-        <div class="row gx-1">
-            <div class="col-12 icon-footer">
-                <img class="icon" src="/images/icons/facebook.svg" alt="Facebook">
-                <img class="icon" src="/images/icons/twitter.svg" alt="Twitter">
-                <img class="icon" src="/images/icons/instagram.svg" alt="Instagram">
-                <img class="icon" src="/images/icons/linkedin.svg" alt="LinkedIn">
-                <img class="icon" src="/images/icons/youtube.svg" alt="LinkedIn">
-            </div>
-        </div>
-        <div class="row gx-1">
-            <div class="col-12">
-                <p>UOC 2023 - by Daniel Larrosa Mujico</p>
-            </div>
-        </div>
-        <!-- Aquí puedes incluir el pie de página con información adicional o enlaces -->
-    </footer>
 
+    <footer class="footer">
+        <img src="../images/menorca_white.svg" alt="Menorca Siuleta" />
+
+        <ul class="">
+            <li class="list-group-item">Sobre nosaltres</li>
+            <li class="list-group-item">Serveis</li>
+            <li class="list-group-item">Marca</li>
+            <li class="list-group-item">Sostenibilitat</li>
+            <li class="list-group-item">Espai soci</li>
+            <a href="/src/sobrenosaltres.html">
+                <li class="list-group-item">Contacte</li>
+            </a>
+        </ul>
+
+        <div class="icon-footer">
+            <a href="#"><img class="icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img class="icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>
+            <a href="#"><img class="icon" src="/images/icons/instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img class="icon" src="/images/icons/linkedin.svg" alt="LinkedIn" /></a>
+            <a href="#"><img class="icon" src="/images/icons/youtube.svg" alt="LinkedIn" /></a>
+        </div>
+        <p>UOC 2023 - by Daniel Larrosa Mujico</p>
+    </footer>
     <!-- Agrega enlaces a tus archivos de scripts JavaScript aquí si es necesario -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
