@@ -1,7 +1,13 @@
 /* CLASES UNIVERSALS PER QUALSEVOL DISPOSITIU (ESCRITORI, TABLET I MÒBIL) */
+
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+}
+
+button {
+  cursor: pointer; /* Cambia el cursor a una mano cuando se pasa el ratón por encima */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
 
 .visually-hidden {
@@ -101,7 +107,6 @@ body {
   width: auto;
   height: 429px;
   flex-shrink: 0;
-  /* Evita que la imagen se contraiga en caso de poco espacio */
 }
 
 .contingut_m1 h1,
@@ -136,6 +141,14 @@ body {
   /* Centra el texto horizontalmente */
 }
 
+.contingut_m1 button:active,
+.contingut_m2 button:active,
+.contingut_m3 button:active,
+.main_content form div button:active,
+#planol_sobrenosaltres button:active {
+  background-color: black;
+}
+
 .ElementCalendari button {
   font-size: 17px;
   background-color: #98082c;
@@ -148,6 +161,9 @@ body {
   height: 100%;
 }
 
+.ElementCalendari button:active{
+  background-color: black;
+}
 .ElementCalendari {
   background-color: #b7536c;
   border-radius: 19px;
@@ -337,7 +353,6 @@ body {
 
 .titolCalendari {
   display: flex;
-  flex-direction: center;
   align-items: center;
 }
 
@@ -610,6 +625,9 @@ img {
   padding-right: 1rem;
   padding-left: 1rem;
 }
+#planol_sobrenosaltres button:active {
+  background-color: #b7536c;
+}
 
 #planol_sobrenosaltres h2 {
   font-weight: bold;
@@ -623,47 +641,34 @@ img {
   font-size: 20px;
 }
 
-/* Oculta el radio button original */
+
 #si,
 #no {
   display: none;
 }
 
-/* Crea un nuevo radio button */
 #si+label:before,
 #no+label:before {
   content: "";
   display: inline-block;
   width: 20px;
-  /* Ajusta el tamaño del radio button aquí */
   height: 20px;
-  /* Ajusta el tamaño del radio button aquí */
   margin-right: 10px;
   border-radius: 50%;
-  /* Hace que el radio button sea redondo */
   border: 2px solid #b7536c;
-  /* Ajusta el color del borde aquí */
   background-color: #b7536c;
-  /* Ajusta el color de fondo aquí */
 }
 
-/* Muestra un indicador cuando el radio button está seleccionado */
 #si:checked+label:before,
 #no:checked+label:before {
   background-color: black;
-  /* Ajusta el color del indicador aquí */
 }
 
 /* PAGINA CATALEG */
-
 #ContenidorCataleg section {
   padding: 2rem;
   border-radius: 36px;
 }
-
-/* #ContenidorCataleg h1 {
-  margin-top: -2rem;
-} */
 
 #oferta,
 #oferta1,
@@ -748,7 +753,9 @@ section #oferta2 #divisor {
 .botocomprar {
   background-color: #98082c;
 }
-
+.botocomprar:active {
+  background-color: black;
+}
 .peudeoferta h3 {
   font-weight: 400;
   font-size: 15px;
@@ -855,6 +862,8 @@ section #oferta2 #divisor {
     border-radius: 5px;
     cursor: pointer;
   }
+
+
   .menu_superior span {
     color: #f2f0e9;
     font-family: "Lato", sans-serif;
