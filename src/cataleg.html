@@ -18,20 +18,22 @@
 <body>
     <div id="menu-superior" class="menu_superior">
         <div id="Logo" class="logo">
-            <a title="Tornar a la pàgina d'inici" href="/src/index.html">
-                <img src="/images/logo.svg" alt="Logotip del club de rugby CRC" width="80rem">
+            <a href="/src/index.html">
+                <img src="/images/logo.svg" alt="Logo" width="80rem">
             </a>
         </div>
-        <div id="menu-escriptori">
+        <div id="menu-escriptori" class="show">
             <a href="../src/sobrenosaltres.html"><label>Sobre Nosaltres</label></a>
             <a href="#"><label>Activitats i serveis</label></a>
             <a href="#"><label>Marca</label></a>
             <a href="#"><label>Sostenibilitat i Reutilització</label></a>
-            <a href="#"><label style="font-weight: bolder;">Espai soci</label></a>
+            <a href="#" id="espai-soci-link">
+                <div>
+                    <label>Espai soci</label>
+                    <img src="/images/icons/downarrow.svg" width="15rem" />
+                </div>    
+            </a>
             <a href="../src/contacte.html"><label>Contacte</label></a>
-        </div>
-        <div id="identificador-movil">
-            <label>Catàleg de productes</label>
         </div>
         <div id="Icons" class="icons_menu">
             <div class="menu-icon" id="menu-icon">
@@ -42,14 +44,18 @@
             <img src="/images/icons/search.svg" alt="Buscar">
         </div>
     </div>
-    <div class="search-bar" id="search-bar">
+    <div id="submenu-escriptori">
+        <a href="../src/cataleg.html"><label style="font-weight: bolder;">Cataleg de productes</label></a>
+        <a href="#"><label>Area privada</label></a>
+    </div>
+    <div class="submenu-movil" id="submenu-movil">
         <div class="items-menu">
-            <a href="/src/index.html">Inicio</a>
+            <a href="/src/index.html">Inici</a>
             <a href="/src/sobrenosaltres.html">Sobre Nosaltres</a>
             <a href="/src/contacte.html">Contacte</a>
             <a href="/src/cataleg.html">Cataleg de productes</a>
         </div>
-        <input type="text" placeholder="Buscar..." aria-label="Buscar continguts">
+        <input type="text" placeholder="Buscar...">
         <button id="tancar-cerca">&#10006;</button>
     </div>
 

@@ -6,10 +6,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -19,12 +21,17 @@
                 <img src="/images/logo.svg" alt="Logo" width="80rem">
             </a>
         </div>
-        <div id="menu-escriptori">
+        <div id="menu-escriptori" class="show">
             <a href="../src/sobrenosaltres.html"><label>Sobre Nosaltres</label></a>
             <a href="#"><label>Activitats i serveis</label></a>
             <a href="#"><label>Marca</label></a>
             <a href="#"><label>Sostenibilitat i Reutilització</label></a>
-            <a href="#"><label>Espai soci</label></a>
+            <a href="#" id="espai-soci-link">
+                <div>
+                    <label>Espai soci</label>
+                    <img src="/images/icons/downarrow.svg" width="15rem" />
+                </div>    
+            </a>
             <a href="../src/contacte.html"><label>Contacte</label></a>
         </div>
         <div id="Icons" class="icons_menu">
@@ -37,10 +44,8 @@
         </div>
     </div>
     <div id="submenu-escriptori">
-        <div class="">
-            
-        </div>
-        
+        <a href="../src/cataleg.html"><label>Cataleg de productes</label></a>
+        <a href="#"><label>Area privada</label></a>
     </div>
     <div class="submenu-movil" id="submenu-movil">
         <div class="items-menu">
@@ -96,9 +101,7 @@
             <div class="ElementCalendari">
                 <div class="divdia">15</div>
                 <div class="divdetalls">15/12/2023 20:00 - VS Shamrock R.C</div>
-                <button
-                
-                >Compra entrades</button>
+                <button>Compra entrades</button>
             </div>
             <div class="ElementCalendari">
                 <div class="divdia">20</div>
@@ -118,22 +121,22 @@
             <div class="loading-container">
                 <img src="../images/icons/loading.svg" alt="Simbol carregant" />
                 <h2 class="title">Mes dates per anunciar!</h2>
-                <img src="../images/icons/loading.svg" alt="Simbol carregant"/>
+                <img src="../images/icons/loading.svg" alt="Simbol carregant" />
             </div>
 
         </div>
         <div class="divisor"></div>
 
         <div class="modul contingut_m3">
-                <h1>Uniu-vos a nosaltres i experimenteu el rugby com mai abans.</h1>
-                <p>
-                    Amb unes instal·lacions excepcionals a Menorca, el Ciutadella Rugby
-                    Club ofereix un entorn únic per a l'entrenament i la pràctica del
-                    rugby. Descobreix les comoditats que fan que la nostra seu sigui un
-                    lloc especial per als amants d'aquest esport.
-                </p>
-                <button>Endevant!</button>
-            
+            <h1>Uniu-vos a nosaltres i experimenteu el rugby com mai abans.</h1>
+            <p>
+                Amb unes instal·lacions excepcionals a Menorca, el Ciutadella Rugby
+                Club ofereix un entorn únic per a l'entrenament i la pràctica del
+                rugby. Descobreix les comoditats que fan que la nostra seu sigui un
+                lloc especial per als amants d'aquest esport.
+            </p>
+            <button>Endevant!</button>
+
         </div>
     </div>
     <footer class="footer">
