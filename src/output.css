@@ -969,9 +969,13 @@ section #oferta #divisor {
     display: flex;
     flex-direction: row;
     align-items: center;
-
-
-
+    text-align: center;
+    justify-content: space-between;
+  }
+  .footer #imgfootermovil {
+    display: none;
+  }
+  .footer #imgfooterescriptori {
     fill: #e8eef2;
     width: 10rem;
     margin-top: 2rem;
