@@ -668,7 +668,7 @@ img {
   margin-top: -2rem;
 } */
 
-#oferta {
+#oferta, #oferta1, #oferta2 {
   background-color: #e8eef2;
   padding-top: 2rem;
   padding-left: 2rem;
@@ -676,26 +676,24 @@ img {
   border-radius: 15px;
 }
 
-section #oferta h1 {
+section #oferta h1, section #oferta1 h1 , section #oferta2 h1{
   font-family: "Josefin Sans", sans-serif;
   text-align: left;
   font-size: 30px;
 }
 
-section #oferta p {
+section #oferta p, section #oferta2 p, section #oferta1 p{
   font-family: "Josefin Sans", sans-serif;
   text-align: left;
   font-size: 15px;
 }
 
-section #oferta #divisor {
+section #oferta #divisor, section #oferta1 #divisor, section #oferta2 #divisor  {
   background-color: #98082c;
   height: 5px;
   border-radius: 10px;
 }
 
-section #oferta img {
-}
 .botofiltrar {
   display: flex;
   align-items: center;
@@ -860,7 +858,9 @@ section #oferta img {
     display: flex;
     flex-direction: column;
   }
-
+  #oferta1, #oferta2 {
+    display: none;
+  }
   /* ------------------- */
 
   /* ------------------- Footer */
@@ -1095,8 +1095,20 @@ section #oferta img {
   /* ------------------- */
   /* ------------------- Pagina Cataleg */
 
-  #oferta {
+  #oferta, #oferta1, #oferta2 {
+    width: 30rem;
+  }
+  #oferta .producte, #oferta1 .producte, #oferta2 .producte {
+    width: 100%;
+    height: 600px;
+  }
+  #oferta, #oferta1, #oferta2 {
     width: 25rem;
+  }
+  #contenidor_ofertes{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
   }
   /* ------------------- */
 
