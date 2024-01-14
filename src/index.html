@@ -19,6 +19,8 @@
         <div id="Logo" class="logo">
             <a href="/src/index.html">
                 <img src="/images/logo.svg" alt="Logo" width="80rem">
+                <span class="visually-hidden">Inici</span>
+
             </a>
         </div>
         <div id="menu-escriptori" class="show">
@@ -30,7 +32,7 @@
                 <div>
                     <label>Espai soci</label>
                     <img src="/images/icons/downarrow.svg" width="15rem" />
-                </div>    
+                </div>
             </a>
             <a href="../src/contacte.html"><label>Contacte</label></a>
         </div>
@@ -40,7 +42,8 @@
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
-            <img src="/images/icons/search.svg" alt="Buscar">
+            <input id="search-input" type="text" style="display: none;" aria-label="Introdueix el teu text aqui">
+            <img id="search-icon" src="/images/icons/search.svg" alt="Buscar">
         </div>
     </div>
     <div id="submenu-escriptori">
@@ -54,50 +57,57 @@
             <a href="/src/contacte.html">Contacte</a>
             <a href="/src/cataleg.html">Cataleg de productes</a>
         </div>
-        <input type="text" placeholder="Buscar...">
+        <input type="text" placeholder="Buscar..." aria-label="Buscar contingut al lloc web">
         <button id="tancar-cerca">&#10006;</button>
     </div>
 
     <div id="ContenidorPrincipal" class="main_content">
         <div id="MenorcaSiuleta">
+            <img src="/images/pexels-julius-holstein-1627960.jpg" alt="Fotografía equip rugby"
+                class="foto_equip rounded-image" />
             <img src="/images/menorca_lletres.svg" alt="Menorca Siuleta" class="svg_menorca" />
         </div>
-        <div class="modul">
-            <div class="imatge-esquerra columna1">
-                <img src="/images/pexels-w-rugby-5823574.jpg" alt="Pilota tombada a la gespa" class="rounded-image" />
+        <div id="contenidor_moduls">
+            <div class="modul">
+                <div class="imatge-esquerra columna1">
+                    <img src="/images/pexels-w-rugby-5823574.jpg" alt="Pilota tombada a la gespa"
+                        class="rounded-image" />
+                </div>
+                <div class="contingut_m1">
+                    <h1>Descobreix el món del rugby amb nosaltres</h1>
+                    <p>
+                        Benvinguts a la casa del rugby a Ciutadella de Menorca. Ja siguis un
+                        apassionat jugador, un fervent seguidor o simplement algú que vol
+                        explorar el món emocionant del rugby, estàs al lloc correcte.
+                        Descobreix el nostre club, les seves històries i la seva passió pel
+                        joc.
+                    </p>
+                    <button>Veure més!</button>
+                </div>
             </div>
-            <div class="contingut_m1">
-                <h1>Descobreix el món del rugby amb nosaltres</h1>
-                <p>
-                    Benvinguts a la casa del rugby a Ciutadella de Menorca. Ja siguis un
-                    apassionat jugador, un fervent seguidor o simplement algú que vol
-                    explorar el món emocionant del rugby, estàs al lloc correcte.
-                    Descobreix el nostre club, les seves històries i la seva passió pel
-                    joc.
-                </p>
-                <button>Veure més!</button>
-            </div>
-        </div>
-
-        <div class="modul">
-            <div class="contingut_m2">
-                <h1>La missió del club</h1>
-                <p>
-                    Estem dedicats a fomentar la passió pel rugby i construir una
-                    comunitat unida. Amb un enfocament en l'esport, la camaraderia i els
-                    valors, aspirem a créixer junts com a equip i superar els reptes amb
-                    determinació.
-                </p>
-                <button>Veure més!</button>
-                <div id="imatgeM2">
-                    <img src="/images/pexels-beto-valderrama-16566938.jpg" alt="" class="rounded-image" />
+            <div class="modul">
+                <div class="contingut_m2">
+                    <h1>La missió del club</h1>
+                    <p>
+                        Estem dedicats a fomentar la passió pel rugby i construir una
+                        comunitat unida. Amb un enfocament en l'esport, la camaraderia i els
+                        valors, aspirem a créixer junts com a equip i superar els reptes amb
+                        determinació.
+                    </p>
+                    <button>Veure més!</button>
+                    <div id="imatgeM2">
+                        <img src="/images/pexels-beto-valderrama-16566938.jpg" alt="" class="rounded-image" />
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="divisor"></div>
-        <div className="">
+        <div class="titolCalendari">
+            <div class="divisor"></div>
             <h1 class="title">Calendari</h1>
+            <div class="divisor"></div>
+        </div>
+
+        <div id="ContenidorIndexCalendari">
             <div class="ElementCalendari">
                 <div class="divdia">15</div>
                 <div class="divdetalls">15/12/2023 20:00 - VS Shamrock R.C</div>
@@ -109,6 +119,7 @@
                 <button>Compra entrades</button>
             </div>
             <div class="ElementCalendari">
+
                 <div class="divdia">7</div>
                 <div class="divdetalls">07/01/2024 17:30 - VS Corsaris Rugby Club</div>
                 <button>Compra entrades</button>
@@ -118,26 +129,31 @@
                 <div class="divdetalls">14/01/2024 21:00 - VS El Toro R.C</div>
                 <button id="botoClicat">Compra entrades</button>
             </div>
-            <div class="loading-container">
-                <img src="../images/icons/loading.svg" alt="Simbol carregant" />
-                <h2 class="title">Mes dates per anunciar!</h2>
-                <img src="../images/icons/loading.svg" alt="Simbol carregant" />
-            </div>
 
+        </div>
+        <div class="loading-container">
+            <img src="../images/icons/loading.svg" alt="Simbol carregant" />
+            <h2 class="title">Mes dates per anunciar!</h2>
+            <img src="../images/icons/loading.svg" alt="Simbol carregant" />
         </div>
         <div class="divisor"></div>
 
-        <div class="modul contingut_m3">
-            <h1>Uniu-vos a nosaltres i experimenteu el rugby com mai abans.</h1>
-            <p>
-                Amb unes instal·lacions excepcionals a Menorca, el Ciutadella Rugby
-                Club ofereix un entorn únic per a l'entrenament i la pràctica del
-                rugby. Descobreix les comoditats que fan que la nostra seu sigui un
-                lloc especial per als amants d'aquest esport.
-            </p>
-            <button>Endevant!</button>
-
+        <div id="contenidor_modulimatgeOut">
+            <div class="modul contingut_m3">
+                <h1>Uniu-vos a nosaltres i experimenteu el rugby com mai abans.</h1>
+                <p>
+                    Amb unes instal·lacions excepcionals a Menorca, el Ciutadella Rugby
+                    Club ofereix un entorn únic per a l'entrenament i la pràctica del
+                    rugby. Descobreix les comoditats que fan que la nostra seu sigui un
+                    lloc especial per als amants d'aquest esport.
+                </p>
+                <button>Endevant!</button>
+            </div>
+            <img src="../images/icons/following.svg" id="icona_following" alt="Fletxa indicant a la dreta" />
+            <img src="../images/pexels-ollie-craig-5670151.jpg" alt="Vista aerea nocturna carregant"
+                class="rounded-image" />
         </div>
+
     </div>
     <footer class="footer">
         <img id="imgfootermovil" src="../images/menorca_white.svg" alt="Menorca Siuleta" />
@@ -163,11 +179,16 @@
         </ul>
         <div class="icon-footer">
             <div>
-                <a href="#"><img class="icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>
-                <a href="#"><img class="icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>
-                <a href="#"><img class="icon" src="/images/icons/instagram.svg" alt="Instagram" /></a>
-                <a href="#"><img class="icon" src="/images/icons/linkedin.svg" alt="LinkedIn" /></a>
-                <a href="#"><img class="icon" src="/images/icons/youtube.svg" alt="LinkedIn" /></a>
+                <a href="https://www.facebook.com/" target="_blank"><img class="icon" src="/images/icons/facebook.svg"
+                        alt="Facebook" /><span class="visually-hidden">Facebook</span></a>
+                <a href="https://www.x.com/" target="_blank"><img class="icon" src="/images/icons/twitter.svg"
+                        alt="Twitter" /><span class="visually-hidden">Twitter</span></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="icon" src="/images/icons/instagram.svg"
+                        alt="Instagram" /><span class="visually-hidden">Instagram</span></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img class="icon" src="/images/icons/linkedin.svg"
+                        alt="LinkedIn" /><span class="visually-hidden">LinkedIn</span></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="icon" src="/images/icons/youtube.svg"
+                        alt="YouTube" /><span class="visually-hidden">Youtube</span></a>
             </div>
             <p>UOC 2023 - by Daniel Larrosa Mujico</p>
         </div>
