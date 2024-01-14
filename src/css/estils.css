@@ -575,7 +575,6 @@ img {
 .left-content,
 .right-content {
   width: 45%;
-  /* Ajusta este valor según tus necesidades */
 }
 
 #SecondRow {
@@ -707,7 +706,6 @@ section #oferta2 #divisor {
   height: 5rem;
   width: 15rem;
   padding: 0 1rem;
-  /* Añade un poco de espacio a los lados del botón */
   margin-bottom: 5px;
 }
 
