@@ -1,5 +1,4 @@
-/* CLASES UNIVERSALS PER QUALSEVOL DISPOSITIU (ESCRITORI, TABLET I MÒBIL) */
-
+/*══════════════ CLASES UNIVERSALS PER QUALSEVOL DISPOSITIU (ESCRITORI, TABLET I MÒBIL) ═══════════════ */
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
@@ -285,7 +284,6 @@ button {
 .imageText .textContainer {
   background-color: rgba(152, 8, 44, 0.5);
   padding: 2rem;
-  /* Ajusta este valor según tus necesidades */
   border-radius: 25px;
   color: white;
 }
@@ -295,7 +293,7 @@ button {
   justify-content: space-between;
 }
 
-#Icons.icons_menu>div {
+#Icons.icons_menu > div {
   margin-right: 10px;
   /* Ajusta el margen según sea necesario para separar los iconos */
 }
@@ -316,11 +314,8 @@ button {
 
 .icon {
   width: 24px;
-  /* Ancho de cada icono */
   height: 24px;
-  /* Altura de cada icono */
   margin-right: 10px;
-  /* Espacio entre los iconos */
 }
 
 .module div {
@@ -411,16 +406,12 @@ button {
   background-size: cover;
   background-position: center;
   height: 300px;
-  /* Ajusta la altura según sea necesario */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  /* Color del texto */
   text-align: center;
-  /* Alineación del texto */
   font-size: 24px;
-  /* Tamaño del texto */
 }
 
 .text_sensefons {
@@ -437,7 +428,6 @@ img {
   height: auto;
 }
 
-/* PAGINA CONTACTE */
 .textarea_full {
   width: 100%;
   box-sizing: border-box;
@@ -455,6 +445,7 @@ img {
 #PoliticaPrivacitat {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
@@ -462,13 +453,13 @@ img {
   display: none;
 }
 
-#PoliticaPrivacitat input[type="checkbox"]+label {
+#PoliticaPrivacitat input[type="checkbox"] + label {
   position: relative;
   padding-left: 35px;
   cursor: pointer;
 }
 
-#PoliticaPrivacitat input[type="checkbox"]+label:before {
+#PoliticaPrivacitat input[type="checkbox"] + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -479,7 +470,7 @@ img {
   border-radius: 5px;
 }
 
-#PoliticaPrivacitat input[type="checkbox"]:checked+label:before {
+#PoliticaPrivacitat input[type="checkbox"]:checked + label:before {
   background-color: #98082c;
 }
 
@@ -629,14 +620,13 @@ img {
   font-size: 20px;
 }
 
-
 #si,
 #no {
   display: none;
 }
 
-#si+label:before,
-#no+label:before {
+#si + label:before,
+#no + label:before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -647,8 +637,8 @@ img {
   background-color: #b7536c;
 }
 
-#si:checked+label:before,
-#no:checked+label:before {
+#si:checked + label:before,
+#no:checked + label:before {
   background-color: black;
 }
 
@@ -790,7 +780,7 @@ section #oferta2 #divisor {
   font-family: "Josefin Sans", sans-serif;
 }
 
-/* CLASES PER VISTA VERSIÓ MOVIL: */
+/*══════════════ CLASES PER VISTA VERSIÓ MOVIL ═══════════════ */
 @media only screen and (max-width: 1024px) {
   .title {
     text-align: center;
@@ -808,7 +798,7 @@ section #oferta2 #divisor {
     display: none;
   }
 
-  /* ------------------- Menu Superior */
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Menu Superior */
   #menu-escriptori,
   #submenu-escriptori {
     display: none;
@@ -854,7 +844,6 @@ section #oferta2 #divisor {
     cursor: pointer;
   }
 
-
   .menu_superior span {
     color: #f2f0e9;
     font-family: "Lato", sans-serif;
@@ -863,7 +852,7 @@ section #oferta2 #divisor {
   }
 
   /* ------------------- */
-  /* ------------------- Pagina Index */
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Index */
 
   .ElementCalendari button {
     font-size: 12px;
@@ -883,7 +872,7 @@ section #oferta2 #divisor {
     font-size: 14px;
   }
 
-  /* ------------------- Pagina Cataleg */
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Catàleg */
 
   #contingut_contacte {
     display: flex;
@@ -897,7 +886,7 @@ section #oferta2 #divisor {
 
   /* ------------------- */
 
-  /* ------------------- Footer */
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Footer */
   .footer {
     background-color: #98082c;
     padding: 15px;
@@ -949,11 +938,9 @@ section #oferta2 #divisor {
   /* ------------------- */
 }
 
-/* CLASES PER VISTA VERSIÓ ESCRIPTORI: */
-
+/*══════════════ CLASES PER VISTA VERSIÓ ESCRIPTORI ═══════════════ */
 @media only screen and (min-width: 1024px) {
-
-  /* ------------------- Clases generals */
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Clases generals */
   .title {
     text-align: left;
   }
@@ -977,7 +964,7 @@ section #oferta2 #divisor {
     /* Ajusta esto para controlar el ancho del contenedor */
   }
 
-  /* ------------------- Clases de la pagina INDEX */
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Clases de la pagina INDEX */
   #ContenidorIndexCalendari {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1127,7 +1114,7 @@ section #oferta2 #divisor {
     top: 140%;
   }
 
-  /* ------------------- Pagina Sobre nosaltres */
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Sobre nosaltres */
   #sobrenosaltres_bloc1,
   #sobrenosaltres_bloc2 {
     height: 20rem;
@@ -1168,7 +1155,7 @@ section #oferta2 #divisor {
 
   /* ------------------- */
 
-  /* ------------------- Pagina Contacte */
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Contacte */
 
   #contingut_contacte {
     display: flex;
@@ -1180,6 +1167,11 @@ section #oferta2 #divisor {
     flex: 1;
   }
 
+  .left-content div {
+    display: flex;
+    flex-direction: column;
+  }
+
   .module {
     flex: 1;
   }
@@ -1189,8 +1181,8 @@ section #oferta2 #divisor {
   }
 
   /* ------------------- */
-  /* ------------------- Pagina Cataleg */
 
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Catàleg ↓ */
   #oferta,
   #oferta1,
   #oferta2 {
