@@ -26,11 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   
   document.getElementById("menu-icon").addEventListener("click", function () {
-    document.getElementById("Icons").addEventListener("click", function () {
-      var menu = document.getElementById("menu-escriptori");
-      menu.classList.toggle("show");
-    });
-  });
+    var menu = document.getElementById("menu-escriptori");
+    menu.classList.toggle("show");
+});
 
   document.getElementById('search-icon').addEventListener('click', function() {
     var input = document.getElementById('search-input');
