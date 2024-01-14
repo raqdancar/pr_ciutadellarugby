@@ -213,8 +213,6 @@ body {
   margin: 5px 0;
 }
 
-
-
 .divdia {
   background-color: #e8eef2;
   color: #000;
@@ -264,8 +262,9 @@ body {
   margin-right: -1rem;
   margin-top: -2rem;
   background-size: cover;
-  height: 300px;
-  /* Ajusta la altura según sea necesario */
+  background-position: center; /* Centra la imagen de fondo en el contenedor */
+  height: 25rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -284,7 +283,7 @@ body {
   justify-content: space-between;
 }
 
-#Icons.icons_menu>div {
+#Icons.icons_menu > div {
   margin-right: 10px;
   /* Ajusta el margen según sea necesario para separar los iconos */
 }
@@ -363,7 +362,6 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 32px;
   font-weight: 700;
-  text-align: center;
 }
 
 .bar {
@@ -378,12 +376,6 @@ body {
   font-size: 20px;
   color: #fff;
 }
-
-
-
-
-
-
 
 .divdia {
   background-color: #e8eef2;
@@ -456,13 +448,13 @@ img {
   display: none;
 }
 
-#PoliticaPrivacitat input[type="checkbox"]+label {
+#PoliticaPrivacitat input[type="checkbox"] + label {
   position: relative;
   padding-left: 35px;
   cursor: pointer;
 }
 
-#PoliticaPrivacitat input[type="checkbox"]+label:before {
+#PoliticaPrivacitat input[type="checkbox"] + label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -473,7 +465,7 @@ img {
   border-radius: 5px;
 }
 
-#PoliticaPrivacitat input[type="checkbox"]:checked+label:before {
+#PoliticaPrivacitat input[type="checkbox"]:checked + label:before {
   background-color: #98082c;
 }
 
@@ -482,7 +474,7 @@ img {
   font-weight: 700;
   margin-top: 0px;
   padding-top: 1rem;
-  text-align: center;
+  text-align: left;
 }
 
 #ContenidorContacte p,
@@ -493,7 +485,7 @@ img {
 }
 
 #ContenidorContacte p {
-  text-align: center;
+  text-align: left;
 }
 
 #ContenidorContacte .module,
@@ -515,7 +507,7 @@ img {
 
 #ContenidorContacte .module iframe {
   border: 5px solid black;
-  border-radius: 10%;
+  border-radius: 40px;
   width: 90%;
   padding: 1rem;
 }
@@ -627,8 +619,8 @@ img {
 }
 
 /* Crea un nuevo radio button */
-#si+label:before,
-#no+label:before {
+#si + label:before,
+#no + label:before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -645,8 +637,8 @@ img {
 }
 
 /* Muestra un indicador cuando el radio button está seleccionado */
-#si:checked+label:before,
-#no:checked+label:before {
+#si:checked + label:before,
+#no:checked + label:before {
   background-color: black;
   /* Ajusta el color del indicador aquí */
 }
@@ -788,12 +780,11 @@ section #oferta #divisor {
   text-decoration: none;
 }
 
-
-
-
 /* CLASES PER VISTA VERSIÓ MOVIL: */
 @media only screen and (max-width: 1024px) {
-
+  .title {
+    text-align: center;
+  }
   /* ------------------- Menu Superior */
   #menu-escriptori,
   #submenu-escriptori {
@@ -838,6 +829,14 @@ section #oferta #divisor {
 
   /* ------------------- */
 
+  /* ------------------- Pagina Cataleg */
+
+  #contingut_contacte {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ------------------- */
 
   /* ------------------- Footer */
   .footer {
@@ -875,7 +874,6 @@ section #oferta #divisor {
     display: flex;
     flex-direction: row;
     gap: 1px;
-
   }
 
   .footer #imgfooterescriptori {
@@ -893,7 +891,13 @@ section #oferta #divisor {
 }
 
 /* CLASES PER VISTA VERSIÓ ESCRIPTORI: */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
+  /* ------------------- Clases generals */
+  .title {
+    text-align: left;
+  }
+    /* ------------------- */
+
   #submenu-movil {
     display: none;
   }
@@ -916,7 +920,7 @@ section #oferta #divisor {
   }
 
   #menu-escriptori label {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 16px;
     font-weight: normal;
     color: #f2f0e9;
@@ -959,9 +963,57 @@ section #oferta #divisor {
   #espai-soci-link div img {
     position: absolute;
     top: 140%;
+  }
+  /* ------------------- Pagina Sobre nosaltres */
+  #sobrenosaltres_bloc1, #sobrenosaltres_bloc2{
+    height: 20rem;
+  }
+  #sobrenosaltres_bloc1 img, #sobrenosaltres_bloc2 img{
+    height: auto;
+  }
+  #sobrenosaltres_bloc1{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  #sobrenosaltres_bloc2{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+  #sobrenosaltres_bloc2 h1,#sobrenosaltres_bloc2 h1{
+    text-align: right;
+  }
+  #sobrenosaltres_bloc1 p{
+    font-size: 25px;
+    text-align: left;
+  }
+  
+  #sobrenosaltres_bloc2 p{
+    font-size: 25px;
+    text-align: right;
 
   }
 
+
+  /* ------------------- */
+  /* ------------------- Pagina Contacte */
+
+  #contingut_contacte {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+
+  }
+  .form-content {
+    flex: 1;
+  }
+  .module {
+    flex: 1;
+  }
+
+  /* ------------------- */
   .footer {
     background-color: #98082c;
     padding: 15px;
@@ -981,5 +1033,4 @@ section #oferta #divisor {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-
 }
