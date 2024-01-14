@@ -11,7 +11,7 @@ body {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
 .menu_superior {
@@ -340,12 +340,12 @@ body {
   padding: 15px;
 }
 
-.titolCalendari{
+.titolCalendari {
   display: flex;
   flex-direction: center;
   align-items: center;
 }
-.titolCalendari h1{
+.titolCalendari h1 {
   font-size: 40px;
   font-weight: 900;
 }
@@ -436,8 +436,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-
 
 /* PAGINA CONTACTE */
 .textarea_full {
@@ -696,6 +694,8 @@ section #oferta #divisor {
   border-radius: 10px;
 }
 
+section #oferta img {
+}
 .botofiltrar {
   display: flex;
   align-items: center;
@@ -807,7 +807,7 @@ section #oferta #divisor {
   .foto_equip {
     display: none;
   }
-  #contenidor_modulimatgeOut img{
+  #contenidor_modulimatgeOut img {
     display: none;
   }
   /* ------------------- Menu Superior */
@@ -917,7 +917,6 @@ section #oferta #divisor {
 
 /* CLASES PER VISTA VERSIÓ ESCRIPTORI: */
 @media only screen and (min-width: 1024px) {
-  
   /* ------------------- Clases generals */
   .title {
     text-align: left;
@@ -931,20 +930,19 @@ section #oferta #divisor {
     margin-right: 1rem;
     color: #98082c;
     font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
   }
-  
   #search-container {
     position: relative;
     width: 200px; /* Ajusta esto para controlar el ancho del contenedor */
-}
-    /* ------------------- Clases de la pagina INDEX */
-  #ContenidorIndexCalendari{
+  }
+  /* ------------------- Clases de la pagina INDEX */
+  #ContenidorIndexCalendari {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  #MenorcaSiuleta{
+  #MenorcaSiuleta {
     display: flex;
     height: 16rem;
     gap: 3rem;
@@ -958,7 +956,7 @@ section #oferta #divisor {
   .svg_menorca {
     width: 20%;
   }
-  #contenidor_moduls{
+  #contenidor_moduls {
     display: flex;
     flex-direction: row;
     gap: 3rem;
@@ -966,19 +964,19 @@ section #oferta #divisor {
   .divdetalls {
     font-size: 22px;
   }
-    /* ------------------- */
-    #contenidor_modulimatgeOut{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: 3rem;
-    }
-    #contenidor_modulimatgeOut .rounded-image{
-      width: auto; /* o el ancho que desees */
-      height: 25rem;
-      object-fit: cover;
-    }
+  /* ------------------- */
+  #contenidor_modulimatgeOut {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  #contenidor_modulimatgeOut .rounded-image {
+    width: auto; /* o el ancho que desees */
+    height: 25rem;
+    object-fit: cover;
+  }
   #submenu-movil {
     display: none;
   }
@@ -1046,46 +1044,46 @@ section #oferta #divisor {
     top: 140%;
   }
   /* ------------------- Pagina Sobre nosaltres */
-  #sobrenosaltres_bloc1, #sobrenosaltres_bloc2{
+  #sobrenosaltres_bloc1,
+  #sobrenosaltres_bloc2 {
     height: 20rem;
   }
-  #sobrenosaltres_bloc1 img, #sobrenosaltres_bloc2 img{
+  #sobrenosaltres_bloc1 img,
+  #sobrenosaltres_bloc2 img {
     height: auto;
   }
-  #sobrenosaltres_bloc1{
+  #sobrenosaltres_bloc1 {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     margin-bottom: 2rem;
   }
-  #sobrenosaltres_bloc2{
+  #sobrenosaltres_bloc2 {
     display: flex;
     flex-direction: row-reverse;
     gap: 1rem;
   }
-  #sobrenosaltres_bloc2 h1,#sobrenosaltres_bloc2 h1{
+  #sobrenosaltres_bloc2 h1,
+  #sobrenosaltres_bloc2 h1 {
     text-align: right;
   }
-  #sobrenosaltres_bloc1 p{
+  #sobrenosaltres_bloc1 p {
     font-size: 25px;
     text-align: left;
   }
-  
-  #sobrenosaltres_bloc2 p{
+
+  #sobrenosaltres_bloc2 p {
     font-size: 25px;
     text-align: right;
-
   }
-
-
   /* ------------------- */
+
   /* ------------------- Pagina Contacte */
 
   #contingut_contacte {
     display: flex;
     flex-direction: row;
     gap: 5rem;
-
   }
   .form-content {
     flex: 1;
@@ -1095,6 +1093,13 @@ section #oferta #divisor {
   }
 
   /* ------------------- */
+  /* ------------------- Pagina Cataleg */
+
+  #oferta {
+    width: 25rem;
+  }
+  /* ------------------- */
+
   .footer {
     background-color: #98082c;
     padding: 15px;
