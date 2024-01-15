@@ -1,0 +1,1233 @@
+/*══════════════ CLASES UNIVERSALS PER QUALSEVOL DISPOSITIU (ESCRITORI, TABLET I MÒBIL) ═══════════════ */
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(100%);
+  border: 0;
+}
+
+.menu_superior {
+  background-color: #98082c;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.items-menu {
+  display: flex;
+  flex-direction: column;
+  color: #f2f0e9;
+  font-family: "Lato", sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.items-menu a {
+  text-decoration: none;
+  color: #f2f0e9;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.items-menu a:visited {
+  color: #e8eef2;
+}
+
+.items-menu a:hover {
+  color: #b7536c;
+}
+
+.modul {
+  background-color: #b7536c;
+  border-radius: 19px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.contingut_m1,
+.contingut_m2,
+.contingut_m3 {
+  color: white;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contingut_m1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1rem;
+}
+
+.contingut_m2 {
+  margin: 3rem;
+}
+
+.contingut_m2 button {
+  margin-bottom: 1rem;
+}
+
+.contingut_m3 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.imatge-esquerra {
+  width: 60%;
+  margin: 1rem;
+  flex: 1;
+}
+
+.imatge-esquerra img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 1;
+}
+
+.contingut_m1 h1,
+.contingut_m3 h1 {
+  font-size: 24px;
+}
+
+.contingut_m1 p,
+.contingut_m2 p,
+.contingut_m3 p {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.contingut_m1 button,
+.contingut_m2 button,
+.contingut_m3 button,
+.main_content form div button,
+#planol_sobrenosaltres button {
+  background-color: #98082c;
+  border-radius: 10px;
+  border: 0px;
+  height: 3rem;
+  width: 8rem;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  line-height: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contingut_m1 button:active,
+.contingut_m2 button:active,
+.contingut_m3 button:active,
+.main_content form div button:active,
+#planol_sobrenosaltres button:active {
+  background-color: black;
+}
+
+.ElementCalendari button:active {
+  background-color: black;
+}
+
+.ElementCalendari {
+  background-color: #b7536c;
+  border-radius: 19px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.rounded-image {
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.module div {
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+}
+
+.module div h1 {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 0px;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px;
+}
+
+.module div p {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+}
+
+.module #DivBoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divisor {
+  flex-grow: 1;
+  background-color: #98082c;
+  margin: 2rem;
+  height: 5px;
+  border-radius: 20px;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.divdia {
+  background-color: #e8eef2;
+  color: #000;
+  font-size: 38px;
+  font-weight: bold;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 5rem;
+}
+
+.divdetalls {
+  background-color: #e8eef2;
+  color: #000;
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.loading-container img {
+  width: 3rem;
+}
+
+.loading-container h2 {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.imageText {
+  background-image: url("../../images/pexels-juliana-chyzhova-2648989.jpg");
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: -2rem;
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageText .textContainer {
+  background-color: rgba(152, 8, 44, 0.5);
+  padding: 2rem;
+  border-radius: 25px;
+  color: white;
+}
+
+#Icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Icons.icons_menu div {
+  margin-right: 10px;
+}
+
+.main_content {
+  background-color: #f2f0e9;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.module {
+  background-color: #b7536c;
+  border-radius: 19px;
+  margin: 2rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.module div {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.module div h1 {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 0px;
+  text-align: center;
+  padding: 15px;
+}
+
+.titolCalendari {
+  display: flex;
+  align-items: center;
+}
+
+.titolCalendari h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.module div p {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+}
+
+.module button {
+  background-color: #98082c;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.module #DivBoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.title {
+  color: #98082c;
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.search-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+
+.divdia {
+  background-color: #e8eef2;
+  color: #000;
+  height: 5rem;
+  font-size: 40px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  background-image: url("/images/pexels-juliana-chyzhova-2648989.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+.text_sensefons {
+  color: #b7536c;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.textarea_full {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.textarea_full div {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea_full button {
+  margin-top: 1rem;
+}
+
+#PoliticaPrivacitat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#PoliticaPrivacitat input[type="checkbox"] {
+  display: none;
+}
+
+#PoliticaPrivacitat input[type="checkbox"]+label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+#PoliticaPrivacitat input[type="checkbox"]+label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 12px;
+  border: 2px solid #98082c;
+  background-color: #f2f0e9;
+  border-radius: 5px;
+}
+
+#PoliticaPrivacitat input[type="checkbox"]:checked+label:before {
+  background-color: #98082c;
+}
+
+#ContenidorContacte h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 0px;
+  padding-top: 1rem;
+  text-align: left;
+}
+
+#ContenidorContacte p,
+#ContenidorContacte form div label {
+  font-family: "Josefin Sans", sans-serif;
+  color: #b7536c;
+  font-size: 20px;
+}
+
+#ContenidorContacte p {
+  text-align: left;
+}
+
+#ContenidorContacte .module,
+#ContenidorCataleg section {
+  background-color: #98082c;
+}
+
+#ContenidorContacte .module p {
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#ContenidorContacte .module h1 {
+  color: #e8eef2;
+  text-align: center;
+  font-weight: bold;
+}
+
+#ContenidorContacte .module iframe {
+  border: 5px solid black;
+  border-radius: 40px;
+  width: 90%;
+  padding: 1rem;
+}
+
+#ContenidorContacte form div input {
+  background-color: #b7536c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  height: 1.5rem;
+  font-size: large;
+  padding: 5px;
+}
+
+#ContenidorContacte #planol_sobrenosaltres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#ContenidorContacte textarea {
+  background-color: #b7536c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  height: 7rem;
+  font-size: large;
+  padding: 1rem;
+}
+
+#ContenidorContacte form div button {
+  font-size: 18px;
+}
+
+#ContenidorContacte .form-content {
+  flex: 1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+#firstRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content,
+.right-content {
+  width: 45%;
+}
+
+#SecondRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textarea_full {
+  width: 100%;
+}
+
+#ContenidorContacte .right-content div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#ContenidorContacte form input,
+#ContenidorContacte form textarea {
+  margin-bottom: 1rem;
+}
+
+#planol_sobrenosaltres button {
+  background-color: black;
+  border-radius: 25px;
+  border: 0px;
+  width: 8rem;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: large;
+  width: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#planol_sobrenosaltres button:active {
+  background-color: #b7536c;
+}
+
+#planol_sobrenosaltres h2 {
+  font-weight: bold;
+  font-size: 35px;
+  color: #fff;
+}
+
+#planol_sobrenosaltres h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#si,
+#no {
+  display: none;
+}
+
+#si+label:before,
+#no+label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid #b7536c;
+  background-color: #b7536c;
+}
+
+#si:checked+label:before,
+#no:checked+label:before {
+  background-color: black;
+}
+
+/* PAGINA CATÀLEG */
+#ContenidorCataleg section {
+  padding: 2rem;
+  border-radius: 36px;
+}
+
+#oferta,
+#oferta1,
+#oferta2 {
+  background-color: #e8eef2;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 15px;
+}
+
+section #oferta h2,
+section #oferta1 h2,
+section #oferta2 h2 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  font-size: 30px;
+}
+
+section #oferta p,
+section #oferta2 p,
+section #oferta1 p {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: left;
+  font-size: 15px;
+}
+
+section #oferta #divisor,
+section #oferta1 #divisor,
+section #oferta2 #divisor {
+  background-color: #98082c;
+  height: 5px;
+  border-radius: 10px;
+}
+
+.botofiltrar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e8eef2;
+  border: none;
+  border-radius: 25px;
+  text-align: left;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  height: 5rem;
+  width: 15rem;
+  padding: 0 1rem;
+  margin-bottom: 5px;
+}
+
+.icon-filtrar {
+  width: 2.5rem;
+}
+
+.butonsaccions,
+.peudeoferta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.butonsaccions {
+  margin-top: 5px;
+}
+
+.butonsaccions button {
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  height: 4rem;
+  width: 8rem;
+  color: white;
+}
+
+.botopreu {
+  background-color: black;
+}
+
+.botocomprar {
+  background-color: #98082c;
+}
+
+.botocomprar:active {
+  background-color: black;
+}
+
+.peudeoferta h3 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.peu-ofertaflex {
+  display: flex;
+  align-items: center;
+}
+
+.peu-ofertaflex img {
+  width: 1rem;
+  margin-right: 4px;
+}
+
+.menu-icon {
+  display: block;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  text-align: left;
+}
+
+.footer ul a {
+  text-decoration: none;
+  color: #e8eef2;
+}
+
+.footer ul a:visited {
+  color: #e8eef2;
+}
+
+.footer ul a:hover {
+  color: black;
+}
+
+.icon-footer p {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/*══════════════ CLASES PER VISTA VERSIÓ MOVIL ═══════════════ */
+@media only screen and (max-width: 1024px) {
+  .title {
+    text-align: center;
+  }
+
+  .svg_menorca {
+    width: 100%;
+  }
+
+  .foto_equip {
+    display: none;
+  }
+
+  #contenidor_modulimatgeOut img {
+    display: none;
+  }
+
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Menu Superior */
+  #menu-escriptori,
+  #submenu-escriptori {
+    display: none;
+  }
+
+  #search-icon {
+    display: none;
+  }
+
+  .submenu-movil {
+    display: none;
+    background-color: #98082c;
+    padding: 15px;
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: #b7536c 5px solid;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .submenu-movil input {
+    font-family: "Lato", sans-serif;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-top: 15px;
+    background-color: #e8eef2;
+    color: #98082c;
+    font-weight: bold;
+    width: auto;
+  }
+
+  .submenu-movil button {
+    background-color: #98082c;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .menu_superior span {
+    color: #f2f0e9;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: larger;
+  }
+  /* ------------------- */
+
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Index */
+
+  .ElementCalendari button {
+    font-size: 12px;
+    background-color: #98082c;
+    border-radius: 10px;
+    border: 0px;
+    width: 6rem;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    height: 100%;
+  }
+  .contingut_m1 p,
+  .contingut_m2 p,
+  .contingut_m3 p {
+    font-size: 14px;
+  }
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Catàleg */
+
+  #contingut_contacte {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #oferta1,
+  #oferta2 {
+    display: none;
+  }
+
+  /* ------------------- */
+
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Contacte */
+  .left-content,
+  .right-content {
+    width: 35%;
+  }
+
+  /* ------------------- */
+
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Footer */
+  .footer {
+    background-color: #98082c;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-style: italic;
+  }
+
+  .icon-footer p {
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .icon-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-footer a {
+    display: inline-block;
+  }
+
+  .icon-footer div {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+  }
+
+  .footer #imgfooterescriptori {
+    display: none;
+  }
+
+  .footer img {
+    fill: #e8eef2;
+    width: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* ------------------- */
+}
+
+/*══════════════ CLASES PER VISTA VERSIÓ ESCRIPTORI ═══════════════ */
+@media only screen and (min-width: 1024px) {
+
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Clases generals */
+  .title {
+    text-align: left;
+  }
+
+  #search-input {
+    height: 2rem;
+    transition: width 0.5s;
+    border: none;
+    background-color: #e8eef2;
+    border-radius: 25px;
+    width: 10rem;
+    margin-right: 1rem;
+    color: #98082c;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  #search-container {
+    position: relative;
+    width: 200px;
+  }
+
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Clases de la pagina INDEX */
+  #ContenidorIndexCalendari {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  #MenorcaSiuleta {
+    display: flex;
+    height: 16rem;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .foto_equip {
+    height: auto;
+    width: 80%;
+    object-fit: cover;
+  }
+
+  .svg_menorca {
+    width: 20%;
+  }
+
+  #contenidor_moduls {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .divdetalls {
+    font-size: 22px;
+  }
+
+  .ElementCalendari button {
+    font-size: 17px;
+    background-color: #98082c;
+    border-radius: 10px;
+    border: 0px;
+    width: 5rem;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    height: 100%;
+  }
+
+  .contingut_m1 p,
+  .contingut_m2 p,
+  .contingut_m3 p {
+    font-size: 20px;
+  }
+
+  /* ------------------- */
+  #contenidor_modulimatgeOut {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  #contenidor_modulimatgeOut .rounded-image {
+    width: 35%;
+    height: auto;
+  }
+
+  #submenu-movil {
+    display: none;
+  }
+
+  #menu-superior {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .menu_superior span {
+    display: none;
+  }
+
+  #menu-escriptori {
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+    transform: translateX(200%);
+    transition: transform 0.3s ease-out;
+  }
+
+  #menu-escriptori a,
+  #submenu-escriptori a {
+    text-decoration: none;
+  }
+
+  #menu-escriptori a,
+  #menu-escriptori a:visited {
+    color: #e8eef2;
+  }
+
+  #menu-escriptori.show {
+    transform: translateX(0);
+  }
+
+  #menu-escriptori label {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #f2f0e9;
+  }
+
+  #submenu-escriptori {
+    background-color: #98082c;
+    padding: 15px;
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    border-top: #f2f0e9 5px solid;
+    display: none;
+  }
+
+  #submenu-escriptori a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    align-items: center;
+  }
+
+  #identificador-movil {
+    display: none;
+  }
+
+  #items-menu {
+    display: none;
+  }
+
+  #espai-soci-link div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #espai-soci-link div img {
+    position: absolute;
+    top: 140%;
+  }
+
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Sobre nosaltres */
+  #sobrenosaltres_bloc1,
+  #sobrenosaltres_bloc2 {
+    height: 20rem;
+  }
+
+  #sobrenosaltres_bloc1 img,
+  #sobrenosaltres_bloc2 img {
+    height: auto;
+  }
+
+  #sobrenosaltres_bloc1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #sobrenosaltres_bloc2 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+  }
+
+  #sobrenosaltres_bloc2 h1,
+  #sobrenosaltres_bloc2 h1 {
+    text-align: right;
+  }
+
+  #sobrenosaltres_bloc1 p {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  #sobrenosaltres_bloc2 p {
+    font-size: 25px;
+    text-align: right;
+  }
+
+  /* ------------------- */
+
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Contacte */
+
+  #contingut_contacte {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .form-content {
+    flex: 1;
+  }
+
+  .left-content div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .module {
+    flex: 1;
+  }
+
+  .module {
+    object-fit: cover;
+  }
+
+  /* ------------------- */
+
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Catàleg ↓ */
+  #oferta,
+  #oferta1,
+  #oferta2 {
+    width: 30rem;
+  }
+
+  #oferta .producte,
+  #oferta1 .producte,
+  #oferta2 .producte {
+    width: 100%;
+    height: 600px;
+  }
+
+  #oferta,
+  #oferta1,
+  #oferta2 {
+    width: 25rem;
+  }
+
+  #contenidor_ofertes {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  /* ------------------- */
+
+  .footer {
+    background-color: #98082c;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .footer #imgfootermovil {
+    display: none;
+  }
+
+  .footer #imgfooterescriptori {
+    fill: #e8eef2;
+    width: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
