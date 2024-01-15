@@ -24,24 +24,21 @@ document.addEventListener("DOMContentLoaded", function () {
       submenuEscriptori.style.display === "block" ? "none" : "block";
   });
 
-  
   document.getElementById("menu-icon").addEventListener("click", function () {
     var menu = document.getElementById("menu-escriptori");
     menu.classList.toggle("show");
-});
+  });
 
-  document.getElementById('search-icon').addEventListener('click', function() {
-    var input = document.getElementById('search-input');
-    if (input.style.display === 'none') {
-        input.style.display = 'block';
-        input.style.width = '10rem'; 
-
+  document.getElementById("search-icon").addEventListener("click", function () {
+    var input = document.getElementById("search-input");
+    if (input.style.display === "none") {
+      input.style.display = "block";
+      input.style.width = "10rem";
     } else {
-        input.style.width = '0';
-        setTimeout(function() {
-            input.style.display = 'none';
-        }, 500); /* Asegúrate de que este valor coincida con la duración de la transición en tu CSS */
+      input.style.width = "0";
+      setTimeout(function () {
+        input.style.display = "none";
+      }, 500);
     }
+  });
 });
-});
-

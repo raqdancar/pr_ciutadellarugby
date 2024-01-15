@@ -1,182 +1,251 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <title>CRC - Contacte</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estils.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estils.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="menu-superior" class="menu_superior">
-        <div id="Logo" class="logo">
-            <a href="../src/index.html">
-                <img src="../images/logo.svg" alt="Logo" width="80">
-                <span class="visually-hidden">Inici</span>
-
-            </a>
+      <div id="Logo" class="logo">
+        <a href="../src/index.html">
+          <img src="../images/logo.svg" alt="Logo" width="80" />
+          <span class="visually-hidden">Inici</span>
+        </a>
+      </div>
+      <span> Contacte </span>
+      <div id="menu-escriptori" class="show">
+        <a href="../src/sobrenosaltres.html">Sobre Nosaltres</a>
+        <a href="#">Activitats i serveis</a>
+        <a href="#">Marca</a>
+        <a href="#">Sostenibilitat i Reutilització</a>
+        <a href="#" id="espai-soci-link">
+          <div>
+            Espai soci
+            <img
+              src="../images/icons/downarrow.svg"
+              width="15"
+              alt="Fletxa per obrir submenu"
+            />
+          </div>
+        </a>
+        <a href="../src/contacte.html" style="font-weight: bolder">Contacte</a>
+      </div>
+      <div id="Icons" class="icons_menu">
+        <div class="menu-icon" id="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-        <span>
-            Contacte
-        </span>
-        <div id="menu-escriptori" class="show">
-            <a href="../src/sobrenosaltres.html">Sobre Nosaltres</a>
-            <a href="#">Activitats i serveis</a>
-            <a href="#">Marca</a>
-            <a href="#">Sostenibilitat i Reutilització</a>
-            <a href="#" id="espai-soci-link">
-                <div>
-                    Espai soci
-                    <img src="../images/icons/downarrow.svg" width="15" alt="Fletxa per obrir submenu">
-                </div>
-            </a>
-            <a href="../src/contacte.html" style="font-weight: bolder;">Contacte</a>
-        </div>
-        <div id="Icons" class="icons_menu">
-            <div class="menu-icon" id="menu-icon">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <label for="search-input" class="visually-hidden">Busqueda</label>
-            <input id="search-input" type="text" style="display: none;" aria-label="Introdueix el teu text aqui">
-            <img id="search-icon" src="../images/icons/search.svg" alt="Buscar">
-        </div>
+        <label for="search-input" class="visually-hidden">Busqueda</label>
+        <input
+          id="search-input"
+          type="text"
+          style="display: none"
+          aria-label="Introdueix el teu text aqui"
+        />
+        <img id="search-icon" src="../images/icons/search.svg" alt="Buscar" />
+      </div>
     </div>
     <div id="submenu-escriptori">
-        <a href="../src/cataleg.html">Catàleg de productes</a>
-        <a href="#">Area privada</a>
+      <a href="../src/cataleg.html">Catàleg de productes</a>
+      <a href="#">Area privada</a>
     </div>
     <div class="submenu-movil" id="submenu-movil">
-        <div class="items-menu">
-            <a href="../src/index.html">Inici</a>
-            <a href="../src/sobrenosaltres.html">Sobre Nosaltres</a>
-            <a href="../src/contacte.html">Contacte</a>
-            <a href="../src/cataleg.html">Catàleg de productes</a>
-        </div>
-        <input type="text" placeholder="Buscar..." aria-label="Buscar contingut al lloc web">
-        <button id="tancar-cerca" type="button">&#10006;</button>
+      <div class="items-menu">
+        <a href="../src/index.html">Inici</a>
+        <a href="../src/sobrenosaltres.html">Sobre Nosaltres</a>
+        <a href="../src/contacte.html">Contacte</a>
+        <a href="../src/cataleg.html">Catàleg de productes</a>
+      </div>
+      <input
+        type="text"
+        placeholder="Buscar..."
+        aria-label="Buscar contingut al lloc web"
+      />
+      <button id="tancar-cerca" type="button">&#10006;</button>
     </div>
 
-
     <div id="ContenidorContacte" class="main_content">
-        <div>
-            <h1 id="titlecontacte" class="title">Estem aquí per escoltar-te</h1>
-            <p>Vols formar part del club?</p>
-        </div>
-        <div id="contingut_contacte">
-            <form class="form-content">
-                <div id="firstRow">
-                    <div class="left-content">
-                        <div>
-                            <label>Nom complert:</label>
-                            <input type="text" id="nom_complert" aria-label="Introduïr nom de contacte">
-                        </div>
-                        <div>
-                            <label>Telèfon:</label>
-                            <input type="number" id="telefon" aria-label="Introduïr Telèfon de contacte">
-                        </div>
-                        <div>
-                            <label>Correu electronic:</label>
-                            <input type="email" id="email" aria-label="Introduïr email de contacte">
-                        </div>
-                    </div>
-                    <div class="right-content">
-                        <label>Ets soci del club?</label>
-                        <div>
-                            <div>
-                                <input type="radio" id="si" name="soci" value="si">
-                                <label for="si">Si</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="no" name="soci" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="SecondRow">
-                    <div class="textarea_full">
-                        <div>
-                            <label>Assumpte</label>
-                            <input type="text" id="assumpte" aria-label="Introduïr assumpte comunicació">
-                        </div>
-                        <div>
-                            <label>En que et podem ajudar?</label>
-                            <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div id="PoliticaPrivacitat">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Accepto la política de
-                                privacitat</label>
-                        </div>
-                        <button type="submit">Enviar</button>
-                    </div>
-                </div>
-                <p>Et respondrem el més aviat possible!</p>
-            </form>
-
-            <div class="module">
-                <div>
-                    <p>Si tens alguna pregunta, suggeriment o vols connectar amb nosaltres, no dubtis a enviar-nos
-                        un missatge. Estem compromesos a construir una comunitat basada en la comunicació i
-                        l'apassionament pel rugby. Completa el formulari de contacte a continuació i ens posarem en
-                        contacte amb tu tan aviat com sigui possible.</p>
-                    <h1>On trobar-nos</h1>
-                </div>
-                <div id="planol_sobrenosaltres">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12225.302041380643!2d3.8347250335738337!3d40.00117608145081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be040aab08890f%3A0x8145a42f36707c1e!2sCiudadela%20de%20Menorca%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1704822565558!5m2!1ses!2ses"
-                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <h3>Gràcies per ser part de la nostra història.</h3>
-                    <h2>Telèfon de contacte:</h2>
-                    <button type="button">
-                        +34-971-859-125
-                    </button>
-                </div>
-
+      <div>
+        <h1 id="titlecontacte" class="title">Estem aquí per escoltar-te</h1>
+        <p>Vols formar part del club?</p>
+      </div>
+      <div id="contingut_contacte">
+        <form class="form-content">
+          <div id="firstRow">
+            <div class="left-content">
+              <div>
+                <label>Nom complert:</label>
+                <input
+                  type="text"
+                  id="nom_complert"
+                  aria-label="Introduïr nom de contacte"
+                />
+              </div>
+              <div>
+                <label>Telèfon:</label>
+                <input
+                  type="number"
+                  id="telefon"
+                  aria-label="Introduïr Telèfon de contacte"
+                />
+              </div>
+              <div>
+                <label>Correu electronic:</label>
+                <input
+                  type="email"
+                  id="email"
+                  aria-label="Introduïr email de contacte"
+                />
+              </div>
             </div>
+            <div class="right-content">
+              <label>Ets soci del club?</label>
+              <div>
+                <div>
+                  <input type="radio" id="si" name="soci" value="si" />
+                  <label for="si">Si</label>
+                </div>
+                <div>
+                  <input type="radio" id="no" name="soci" value="no" />
+                  <label for="no">No</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="SecondRow">
+            <div class="textarea_full">
+              <div>
+                <label>Assumpte</label>
+                <input
+                  type="text"
+                  id="assumpte"
+                  aria-label="Introduïr assumpte comunicació"
+                />
+              </div>
+              <div>
+                <label>En que et podem ajudar?</label>
+                <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div id="PoliticaPrivacitat">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Accepto la política de privacitat</label
+                >
+              </div>
+              <button type="submit">Enviar</button>
+            </div>
+          </div>
+          <p>Et respondrem el més aviat possible!</p>
+        </form>
+
+        <div class="module">
+          <div>
+            <p>
+              Si tens alguna pregunta, suggeriment o vols connectar amb
+              nosaltres, no dubtis a enviar-nos un missatge. Estem compromesos a
+              construir una comunitat basada en la comunicació i l'apassionament
+              pel rugby. Completa el formulari de contacte a continuació i ens
+              posarem en contacte amb tu tan aviat com sigui possible.
+            </p>
+            <h1>On trobar-nos</h1>
+          </div>
+          <div id="planol_sobrenosaltres">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12225.302041380643!2d3.8347250335738337!3d40.00117608145081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12be040aab08890f%3A0x8145a42f36707c1e!2sCiudadela%20de%20Menorca%2C%20Islas%20Baleares!5e0!3m2!1ses!2ses!4v1704822565558!5m2!1ses!2ses"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <h3>Gràcies per ser part de la nostra història.</h3>
+            <h2>Telèfon de contacte:</h2>
+            <button type="button">+34-971-859-125</button>
+          </div>
         </div>
+      </div>
     </div>
 
     <footer class="footer">
-        <img id="imgfootermovil" src="../images/menorca_white.svg" alt="Menorca Siuleta">
-        <ul>
-            <li class="list-group-item"><a href="../src/sobrenosaltres.html">Sobre nosaltres</a></li>
-            <li class="list-group-item"><a href="#">Serveis</a></li>
-            <li class="list-group-item"><a href="#">Marca</a></li>
-            <li class="list-group-item"><a href="#">Sostenibilitat</a></li>
-            <li class="list-group-item"><a href="#">Espai soci</a></li>
-            <li class="list-group-item"><a href="../src/contacte.html">Contacte</a></li>
-        </ul>
-        <div class="icon-footer">
-            <div>
-                <a href="https://www.facebook.com/" target="_blank"><img class="icon" src="../images/icons/facebook.svg"
-                        alt="Facebook"><span class="visually-hidden">Facebook</span></a>
-                <a href="https://www.x.com/" target="_blank"><img class="icon" src="../images/icons/twitter.svg"
-                        alt="Twitter"><span class="visually-hidden">Twitter</span></a>
-                <a href="https://www.instagram.com/" target="_blank"><img class="icon"
-                        src="../images/icons/instagram.svg" alt="Instagram"><span
-                        class="visually-hidden">Instagram</span></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img class="icon" src="../images/icons/linkedin.svg"
-                        alt="LinkedIn"><span class="visually-hidden">LinkedIn</span></a>
-                <a href="https://www.youtube.com/" target="_blank"><img class="icon" src="../images/icons/youtube.svg"
-                        alt="YouTube"><span class="visually-hidden">Youtube</span></a>
-            </div>
-            <p>UOC 2023 - by Daniel Larrosa Mujico</p>
+      <img
+        id="imgfootermovil"
+        src="../images/menorca_white.svg"
+        alt="Menorca Siuleta"
+      />
+      <ul>
+        <li class="list-group-item">
+          <a href="../src/sobrenosaltres.html">Sobre nosaltres</a>
+        </li>
+        <li class="list-group-item"><a href="#">Serveis</a></li>
+        <li class="list-group-item"><a href="#">Marca</a></li>
+        <li class="list-group-item"><a href="#">Sostenibilitat</a></li>
+        <li class="list-group-item"><a href="#">Espai soci</a></li>
+        <li class="list-group-item">
+          <a href="../src/contacte.html">Contacte</a>
+        </li>
+      </ul>
+      <div class="icon-footer">
+        <div>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              class="icon"
+              src="../images/icons/facebook.svg"
+              alt="Facebook"
+            /><span class="visually-hidden">Facebook</span></a
+          >
+          <a href="https://www.x.com/" target="_blank"
+            ><img
+              class="icon"
+              src="../images/icons/twitter.svg"
+              alt="Twitter"
+            /><span class="visually-hidden">Twitter</span></a
+          >
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              class="icon"
+              src="../images/icons/instagram.svg"
+              alt="Instagram"
+            /><span class="visually-hidden">Instagram</span></a
+          >
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><img
+              class="icon"
+              src="../images/icons/linkedin.svg"
+              alt="LinkedIn"
+            /><span class="visually-hidden">LinkedIn</span></a
+          >
+          <a href="https://www.youtube.com/" target="_blank"
+            ><img
+              class="icon"
+              src="../images/icons/youtube.svg"
+              alt="YouTube"
+            /><span class="visually-hidden">Youtube</span></a
+          >
         </div>
-        <img id="imgfooterescriptori" src="../images/menorca_white.svg" alt="Menorca Siuleta">
+        <p>UOC 2023 - by Daniel Larrosa Mujico</p>
+      </div>
+      <img
+        id="imgfooterescriptori"
+        src="../images/menorca_white.svg"
+        alt="Menorca Siuleta"
+      />
     </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

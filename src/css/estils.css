@@ -253,7 +253,6 @@ button {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  /* Ajusta este valor según tus necesidades */
 }
 
 .loading-container img {
@@ -272,7 +271,6 @@ button {
   margin-top: -2rem;
   background-size: cover;
   background-position: center;
-  /* Centra la imagen de fondo en el contenedor */
   height: 25rem;
 
   display: flex;
@@ -292,7 +290,7 @@ button {
   justify-content: space-between;
 }
 
-#Icons.icons_menu div{
+#Icons.icons_menu div {
   margin-right: 10px;
 }
 
@@ -586,7 +584,6 @@ img {
 #ContenidorContacte form input,
 #ContenidorContacte form textarea {
   margin-bottom: 1rem;
-  /* Ajusta este valor según tus necesidades */
 }
 
 #planol_sobrenosaltres button {
@@ -641,7 +638,7 @@ img {
   background-color: black;
 }
 
-/* PAGINA CATALEG */
+/* PAGINA CATÀLEG */
 #ContenidorCataleg section {
   padding: 2rem;
   border-radius: 36px;
@@ -849,8 +846,8 @@ section #oferta2 #divisor {
     font-weight: bold;
     font-size: larger;
   }
-
   /* ------------------- */
+
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Index */
 
   .ElementCalendari button {
@@ -864,13 +861,11 @@ section #oferta2 #divisor {
     font-weight: bold;
     height: 100%;
   }
-
   .contingut_m1 p,
   .contingut_m2 p,
   .contingut_m3 p {
     font-size: 14px;
   }
-
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Catàleg */
 
   #contingut_contacte {
@@ -890,6 +885,7 @@ section #oferta2 #divisor {
   .right-content {
     width: 35%;
   }
+
   /* ------------------- */
 
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Footer */
@@ -968,7 +964,6 @@ section #oferta2 #divisor {
   #search-container {
     position: relative;
     width: 200px;
-    /* Ajusta esto para controlar el ancho del contenedor */
   }
 
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Clases de la pagina INDEX */

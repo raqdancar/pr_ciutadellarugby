@@ -1,138 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <title>CRC - Sobre Nosaltres</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estils.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estils.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div id="menu-superior" class="menu_superior">
-        <div id="Logo" class="logo">
-            <a href="../src/index.html">
-                <img src="../images/logo.svg" alt="Logo" width="80">
-                <span class="visually-hidden">Inici</span>
-
-            </a>
+      <div id="Logo" class="logo">
+        <a href="../src/index.html">
+          <img src="../images/logo.svg" alt="Logo" width="80" />
+          <span class="visually-hidden">Inici</span>
+        </a>
+      </div>
+      <span> Sobre Nosaltres </span>
+      <div id="menu-escriptori" class="show">
+        <a href="../src/sobrenosaltres.html" style="font-weight: bolder"
+          >Sobre Nosaltres</a
+        >
+        <a href="#">Activitats i serveis</a>
+        <a href="#">Marca</a>
+        <a href="#">Sostenibilitat i Reutilització</a>
+        <a href="#" id="espai-soci-link">
+          <div>
+            Espai soci
+            <img
+              src="../images/icons/downarrow.svg"
+              alt="Fletxa per obrir submenu"
+            />
+          </div>
+        </a>
+        <a href="../src/contacte.html">Contacte</a>
+      </div>
+      <div id="Icons" class="icons_menu">
+        <div class="menu-icon" id="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-        <span>
-            Sobre Nosaltres
-        </span>
-        <div id="menu-escriptori" class="show">
-            <a href="../src/sobrenosaltres.html" style="font-weight: bolder;">Sobre Nosaltres</a>
-            <a href="#">Activitats i serveis</a>
-            <a href="#">Marca</a>
-            <a href="#">Sostenibilitat i Reutilització</a>
-            <a href="#" id="espai-soci-link">
-                <div>
-                    Espai soci
-                    <img src="../images/icons/downarrow.svg" alt="Fletxa per obrir submenu">
-                </div>
-            </a>
-            <a href="../src/contacte.html">Contacte</a>
-        </div>
-        <div id="Icons" class="icons_menu">
-            <div class="menu-icon" id="menu-icon">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <label for="search-input" class="visually-hidden">Busqueda</label>
-            <input id="search-input" type="text" style="display: none;" aria-label="Introdueix el teu text aqui">
-            <img id="search-icon" src="../images/icons/search.svg" alt="Buscar">
-        </div>
+        <label for="search-input" class="visually-hidden">Busqueda</label>
+        <input
+          id="search-input"
+          type="text"
+          style="display: none"
+          aria-label="Introdueix el teu text aqui"
+        />
+        <img id="search-icon" src="../images/icons/search.svg" alt="Buscar" />
+      </div>
     </div>
     <div id="submenu-escriptori">
-        <a href="../src/cataleg.html">Catàleg de productes</a>
-        <a href="#">Area privada</a>
+      <a href="../src/cataleg.html">Catàleg de productes</a>
+      <a href="#">Area privada</a>
     </div>
     <div class="submenu-movil" id="submenu-movil">
-        <div class="items-menu">
-            <a href="../src/index.html">Inici</a>
-            <a href="../src/sobrenosaltres.html">Sobre Nosaltres</a>
-            <a href="../src/contacte.html">Contacte</a>
-            <a href="../src/cataleg.html">Catàleg de productes</a>
-        </div>
-        <input type="text" placeholder="Buscar..." aria-label="Buscar contingut al lloc web">
-        <button id="tancar-cerca" type="button">&#10006;</button>
+      <div class="items-menu">
+        <a href="../src/index.html">Inici</a>
+        <a href="../src/sobrenosaltres.html">Sobre Nosaltres</a>
+        <a href="../src/contacte.html">Contacte</a>
+        <a href="../src/cataleg.html">Catàleg de productes</a>
+      </div>
+      <input
+        type="text"
+        placeholder="Buscar..."
+        aria-label="Buscar contingut al lloc web"
+      />
+      <button id="tancar-cerca" type="button">&#10006;</button>
     </div>
-
 
     <div id="ContenidorPrincipal" class="main_content">
-        <div class="imageText">
-            <div class="textContainer">
-                <h1>Menorca, l'illa del rugby</h1>
-            </div>
+      <div class="imageText">
+        <div class="textContainer">
+          <h1>Menorca, l'illa del rugby</h1>
         </div>
+      </div>
 
-        <h1 class="title">Descobreix el cor del Ciutadella Rugby Club</h1>
-        <div id="sobrenosaltres_bloc1">
-            <p class="text_sensefons">
-                Benvinguts al Ciutadella Rugby Club, una comunitat apassionada que transcendeix el camp de rugby. Amb la
-                nostra base a Ciutadella de Menorca, celebrem la rica història del club i la bellesa de la nostra
-                localització. Amb un compromís profund amb els valors esportius, la inclusió i l'esperit comunitari,
-                aspirem
-                a fer créixer el rugby i deixar una empremta positiva a la nostra estimada Ciutadella
-            </p>
-            <img src="../images/pexels-ollie-craig-5585969.jpg" alt="Vista aèria del camp de rugby"
-                class="rounded-image">
+      <h1 class="title">Descobreix el cor del Ciutadella Rugby Club</h1>
+      <div id="sobrenosaltres_bloc1">
+        <p class="text_sensefons">
+          Benvinguts al Ciutadella Rugby Club, una comunitat apassionada que
+          transcendeix el camp de rugby. Amb la nostra base a Ciutadella de
+          Menorca, celebrem la rica història del club i la bellesa de la nostra
+          localització. Amb un compromís profund amb els valors esportius, la
+          inclusió i l'esperit comunitari, aspirem a fer créixer el rugby i
+          deixar una empremta positiva a la nostra estimada Ciutadella
+        </p>
+        <img
+          src="../images/pexels-ollie-craig-5585969.jpg"
+          alt="Vista aèria del camp de rugby"
+          class="rounded-image"
+        />
+      </div>
+      <div id="sobrenosaltres_bloc2">
+        <div>
+          <h1 class="title">Travessem Dècades de Passió i Esforç</h1>
+          <p class="text_sensefons">
+            El nostre club té una història rica i vibrant que es remunta a
+            diverses dècades. Des dels seus modestos inicis fins a esdeveniments
+            èpics i triomfs, cada capítol de la nostra història està marcat per
+            la passió pel rugby, la dedicació dels nostres membres i la
+            construcció d'una comunitat que perdura en el temps. Explora amb
+            nosaltres el llegat del Ciutadella Rugby Club i celebra els moments
+            que han format la nostra identitat única.
+          </p>
         </div>
-        <div id="sobrenosaltres_bloc2">
-            <div>
-
-                <h1 class="title">Travessem Dècades de Passió i Esforç</h1>
-                <p class="text_sensefons">
-                    El nostre club té una història rica i vibrant que es remunta a diverses dècades. Des dels seus
-                    modestos
-                    inicis fins a esdeveniments èpics i triomfs, cada capítol de la nostra història està marcat per la
-                    passió
-                    pel rugby, la dedicació dels nostres membres i la construcció d'una comunitat que perdura en el
-                    temps.
-                    Explora amb nosaltres el llegat del Ciutadella Rugby Club i celebra els moments que han format la
-                    nostra
-                    identitat única.
-                </p>
-            </div>
-            <img src="../images/pexels-isaac-garcia-16951062.jpg" alt="Jugador de rugby posant la pilota en joc"
-                class="rounded-image">
-        </div>
+        <img
+          src="../images/pexels-isaac-garcia-16951062.jpg"
+          alt="Jugador de rugby posant la pilota en joc"
+          class="rounded-image"
+        />
+      </div>
     </div>
     <footer class="footer">
-        <img id="imgfootermovil" src="../images/menorca_white.svg" alt="Menorca Siuleta">
-        <ul>
-            <li class="list-group-item"><a href="../src/sobrenosaltres.html">Sobre nosaltres</a></li>
-            <li class="list-group-item"><a href="#">Serveis</a></li>
-            <li class="list-group-item"><a href="#">Marca</a></li>
-            <li class="list-group-item"><a href="#">Sostenibilitat</a></li>
-            <li class="list-group-item"><a href="#">Espai soci</a></li>
-            <li class="list-group-item"><a href="../src/contacte.html">Contacte</a></li>
-        </ul>
-        <div class="icon-footer">
-            <div>
-                <a href="https://www.facebook.com/" target="_blank"><img class="icon" src="../images/icons/facebook.svg"
-                        alt="Facebook"><span class="visually-hidden">Facebook</span></a>
-                <a href="https://www.x.com/" target="_blank"><img class="icon" src="../images/icons/twitter.svg"
-                        alt="Twitter"><span class="visually-hidden">Twitter</span></a>
-                <a href="https://www.instagram.com/" target="_blank"><img class="icon" src="../images/icons/instagram.svg"
-                        alt="Instagram"><span class="visually-hidden">Instagram</span></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img class="icon" src="../images/icons/linkedin.svg"
-                        alt="LinkedIn"><span class="visually-hidden">LinkedIn</span></a>
-                <a href="https://www.youtube.com/" target="_blank"><img class="icon" src="../images/icons/youtube.svg"
-                        alt="YouTube"><span class="visually-hidden">Youtube</span></a>
-            </div>
-            <p>UOC 2023 - by Daniel Larrosa Mujico</p>
+      <img
+        id="imgfootermovil"
+        src="../images/menorca_white.svg"
+        alt="Menorca Siuleta"
+      />
+      <ul>
+        <li class="list-group-item">
+          <a href="../src/sobrenosaltres.html">Sobre nosaltres</a>
+        </li>
+        <li class="list-group-item"><a href="#">Serveis</a></li>
+        <li class="list-group-item"><a href="#">Marca</a></li>
+        <li class="list-group-item"><a href="#">Sostenibilitat</a></li>
+        <li class="list-group-item"><a href="#">Espai soci</a></li>
+        <li class="list-group-item">
+          <a href="../src/contacte.html">Contacte</a>
+        </li>
+      </ul>
+      <div class="icon-footer">
+        <div>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              class="icon"
+              src="../images/icons/facebook.svg"
+              alt="Facebook"
+            /><span class="visually-hidden">Facebook</span></a
+          >
+          <a href="https://www.x.com/" target="_blank"
+            ><img
+              class="icon"
+              src="../images/icons/twitter.svg"
+              alt="Twitter"
+            /><span class="visually-hidden">Twitter</span></a
+          >
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              class="icon"
+              src="../images/icons/instagram.svg"
+              alt="Instagram"
+            /><span class="visually-hidden">Instagram</span></a
+          >
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><img
+              class="icon"
+              src="../images/icons/linkedin.svg"
+              alt="LinkedIn"
+            /><span class="visually-hidden">LinkedIn</span></a
+          >
+          <a href="https://www.youtube.com/" target="_blank"
+            ><img
+              class="icon"
+              src="../images/icons/youtube.svg"
+              alt="YouTube"
+            /><span class="visually-hidden">Youtube</span></a
+          >
         </div>
-        <img id="imgfooterescriptori" src="../images/menorca_white.svg" alt="Menorca Siuleta">
+        <p>UOC 2023 - by Daniel Larrosa Mujico</p>
+      </div>
+      <img
+        id="imgfooterescriptori"
+        src="../images/menorca_white.svg"
+        alt="Menorca Siuleta"
+      />
     </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
