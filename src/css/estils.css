@@ -293,9 +293,8 @@ button {
   justify-content: space-between;
 }
 
-#Icons.icons_menu > div {
+#Icons.icons_menu div{
   margin-right: 10px;
-  /* Ajusta el margen según sea necesario para separar los iconos */
 }
 
 .main_content {
@@ -445,7 +444,6 @@ img {
 #PoliticaPrivacitat {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
 
@@ -453,24 +451,26 @@ img {
   display: none;
 }
 
-#PoliticaPrivacitat input[type="checkbox"] + label {
+#PoliticaPrivacitat input[type="checkbox"]+label {
   position: relative;
   padding-left: 35px;
   cursor: pointer;
 }
 
-#PoliticaPrivacitat input[type="checkbox"] + label:before {
+#PoliticaPrivacitat input[type="checkbox"]+label:before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
-  width: 25px;
-  height: 25px;
+  top: -2px;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 12px;
   border: 2px solid #98082c;
+  background-color: #f2f0e9;
   border-radius: 5px;
 }
 
-#PoliticaPrivacitat input[type="checkbox"]:checked + label:before {
+#PoliticaPrivacitat input[type="checkbox"]:checked+label:before {
   background-color: #98082c;
 }
 
@@ -625,8 +625,8 @@ img {
   display: none;
 }
 
-#si + label:before,
-#no + label:before {
+#si+label:before,
+#no+label:before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -637,8 +637,8 @@ img {
   background-color: #b7536c;
 }
 
-#si:checked + label:before,
-#no:checked + label:before {
+#si:checked+label:before,
+#no:checked+label:before {
   background-color: black;
 }
 
@@ -886,6 +886,13 @@ section #oferta2 #divisor {
 
   /* ------------------- */
 
+  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Pagina Contacte */
+  .left-content,
+  .right-content {
+    width: 35%;
+  }
+  /* ------------------- */
+
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Footer */
   .footer {
     background-color: #98082c;
@@ -940,6 +947,7 @@ section #oferta2 #divisor {
 
 /*══════════════ CLASES PER VISTA VERSIÓ ESCRIPTORI ═══════════════ */
 @media only screen and (min-width: 1024px) {
+
   /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Clases generals */
   .title {
     text-align: left;
@@ -1026,11 +1034,8 @@ section #oferta2 #divisor {
   }
 
   #contenidor_modulimatgeOut .rounded-image {
-    width: 100%;
-    /* Asegura que la imagen no sea más ancha que su contenedor */
+    width: 35%;
     height: auto;
-    /* Asegura que la imagen mantenga su aspecto original */
-    object-fit: cover;
   }
 
   #submenu-movil {

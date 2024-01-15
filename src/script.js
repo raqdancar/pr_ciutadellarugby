@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var input = document.getElementById('search-input');
     if (input.style.display === 'none') {
         input.style.display = 'block';
-        input.style.width = '10rem'; /* Ajusta esto para controlar el ancho del input */
+        input.style.width = '10rem'; 
 
     } else {
         input.style.width = '0';
