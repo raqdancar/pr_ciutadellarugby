@@ -5,13 +5,13 @@ Aquest projecte es una pàgina web creada pel Ciutadella Rugby Club com a part d
 ## Descripció del Projecte
 Aquest projecte té com a objectiu proporcionar una plataforma en xarxa per el Ciutadella Rugby Club, on els membres del club i els seus visitants poden obtenir informació sobre el club, els próxims partits, les noticies i més.
 
-## Tecnologies Utilitzadas
+## Tecnologies utilitzades
 
 - HTML5
 - CSS3
 - JavaScript
 
-## Com execitar el projecte
+## Com executar el projecte
 
 1. Clona el repositori a la teva maquina local.
 2. Obre el arxiu `index.html` a qualsevol navegador web.
